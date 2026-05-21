@@ -1,0 +1,14 @@
+{
+  "name": "rose-quartz-massage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "sitemap": "node scripts/generate-sitemap.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.2.6"
+  }
+}

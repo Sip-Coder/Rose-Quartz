@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "dev": "vite",
     "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "devDependencies": {

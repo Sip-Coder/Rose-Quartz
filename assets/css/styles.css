@@ -122,24 +122,22 @@ nav {
   width: 45px;
   height: 45px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  border: none;
   border-radius: 50%;
-  background: linear-gradient(145deg, rgba(244, 239, 228, 0.18), rgba(139, 184, 173, 0.18));
+  background: none;
 }
 
 .site-header.is-scrolled .brand-mark,
 .footer-brand .brand-mark {
-  border-color: rgba(49, 75, 54, 0.22);
+  border-color: transparent;
 }
 
-.brand-mark svg {
-  width: 30px;
-  height: 30px;
-  fill: rgba(244, 239, 228, 0.3);
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
+.brand-mark img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-name,

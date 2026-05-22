@@ -4,7 +4,7 @@
   "description": "Light-touch therapeutic massage, prenatal comfort, nervous-system support, and restorative care in Las Vegas.",
   "start_url": "/",
   "scope": "/",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#fbf8ef",
   "theme_color": "#314b36",
   "icons": [

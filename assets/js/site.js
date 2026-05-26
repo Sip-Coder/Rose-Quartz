@@ -28,6 +28,8 @@ const ritualWater = document.querySelector("[data-ritual-water]");
 const ritualBody = document.querySelector("[data-ritual-body]");
 const ritualReturn = document.querySelector("[data-ritual-return]");
 const ritualApply = document.querySelector("[data-ritual-apply]");
+const pricingModeButtons = document.querySelectorAll("[data-pricing-mode]");
+const priceCards = document.querySelectorAll("[data-price-card]");
 
 const sessionMap = {
   zones: new Set(),
@@ -163,6 +165,32 @@ const syncHeader = () => {
 
 syncHeader();
 window.addEventListener("scroll", syncHeader, { passive: true });
+
+const syncPricingMode = (mode) => {
+  if (!priceCards.length) return;
+
+  const isMembership = mode === "membership";
+  priceCards.forEach((card) => {
+    const value = card.querySelector("[data-price-value]");
+    const label = card.querySelector("[data-price-label]");
+    if (value) value.textContent = isMembership ? card.dataset.memberPrice : card.dataset.onetimePrice;
+    if (label) label.textContent = isMembership ? card.dataset.memberLabel : card.dataset.onetimeLabel;
+  });
+};
+
+pricingModeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const mode = button.dataset.pricingMode || "one-time";
+    pricingModeButtons.forEach((item) => {
+      const isSelected = item === button;
+      item.classList.toggle("is-selected", isSelected);
+      item.setAttribute("aria-pressed", String(isSelected));
+    });
+    syncPricingMode(mode);
+  });
+});
+
+syncPricingMode("one-time");
 
 if (bioPhoto) {
   bioPhoto.addEventListener("error", () => {

@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rose Quartz Massage Competitive Pricing Printout</title>
+    <style>
+      :root {
+        --ink: #17211a;
+        --soft: #4d5b4f;
+        --forest: #314b36;
+        --line: #d9d1c2;
+        --linen: #fbf8ef;
+        --marble: #f4efe4;
+        --gold: #b88636;
+        --water: #dcebe6;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+      }
+
+      .page {
+        width: 8.5in;
+        margin: 0 auto;
+        padding: 0.48in;
+        background: white;
+      }
+
+      .cover {
+        display: grid;
+        gap: 0.18in;
+        margin-bottom: 0.25in;
+        padding: 0.28in;
+        color: white;
+        background: linear-gradient(135deg, #243a2a, #6f4c31);
+        border-radius: 10px;
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: #f1cf90;
+        font-size: 9pt;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        color: var(--forest);
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 600;
+        line-height: 1.05;
+      }
+
+      .cover h1 {
+        max-width: 7in;
+        color: white;
+        font-size: 28pt;
+      }
+
+      .cover p {
+        max-width: 6.9in;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 10.5pt;
+        line-height: 1.48;
+      }
+
+      .meta-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.08in;
+      }
+
+      .meta-row div,
+      .summary-card,
+      .source-card {
+        padding: 0.11in;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--linen);
+      }
+
+      .meta-row strong,
+      .summary-card strong,
+      .source-card strong {
+        display: block;
+        color: var(--forest);
+        font-size: 8pt;
+        text-transform: uppercase;
+      }
+
+      .meta-row span,
+      .summary-card span,
+      .source-card span {
+        display: block;
+        margin-top: 0.04in;
+        color: var(--soft);
+        font-size: 9pt;
+        line-height: 1.35;
+      }
+
+      .section {
+        margin-top: 0.24in;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 0.18in;
+        margin-bottom: 0.12in;
+        padding-bottom: 0.07in;
+        border-bottom: 2px solid var(--forest);
+      }
+
+      .section-head h2 {
+        font-size: 18pt;
+      }
+
+      .section-head p {
+        max-width: 3.25in;
+        margin: 0;
+        color: var(--soft);
+        font-size: 8.5pt;
+        line-height: 1.35;
+        text-align: right;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size: 7.25pt;
+      }
+
+      th,
+      td {
+        padding: 0.065in;
+        vertical-align: top;
+        border: 1px solid var(--line);
+        line-height: 1.28;
+      }
+
+      th {
+        color: white;
+        background: var(--forest);
+        font-size: 7.3pt;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      tr:nth-child(even) td {
+        background: #fcfaf4;
+      }
+
+      a {
+        color: #2b6759;
+        text-decoration: none;
+        word-break: break-word;
+      }
+
+      .price-table th:nth-child(1) { width: 15%; }
+      .price-table th:nth-child(2) { width: 19%; }
+      .price-table th:nth-child(3) { width: 12%; }
+      .price-table th:nth-child(4) { width: 17%; }
+      .price-table th:nth-child(5) { width: 18%; }
+      .price-table th:nth-child(6) { width: 19%; }
+
+      .target-grid {
+        display: grid;
+        grid-template-columns: 1.08fr 1fr;
+        gap: 0.12in;
+      }
+
+      .target-grid table {
+        font-size: 8pt;
+      }
+
+      .summary-card {
+        display: grid;
+        gap: 0.06in;
+        background: linear-gradient(135deg, #fbf8ef, #edf5ef);
+      }
+
+      .summary-card h3 {
+        font-size: 15pt;
+      }
+
+      .summary-card p {
+        margin: 0;
+        color: var(--soft);
+        font-size: 9pt;
+        line-height: 1.42;
+      }
+
+      .check-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.18in;
+      }
+
+      .check-panel {
+        padding: 0.15in;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--linen);
+        break-inside: avoid;
+      }
+
+      .check-panel h3 {
+        margin-bottom: 0.1in;
+        font-size: 14pt;
+      }
+
+      .check-list {
+        display: grid;
+        gap: 0.058in;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .check-list li {
+        display: grid;
+        grid-template-columns: 0.16in 1fr;
+        gap: 0.07in;
+        align-items: start;
+        color: var(--soft);
+        font-size: 8.6pt;
+        line-height: 1.26;
+      }
+
+      .check {
+        width: 0.14in;
+        height: 0.14in;
+        margin-top: 0.005in;
+        border: 1.4px solid var(--forest);
+        border-radius: 2px;
+        background: white;
+      }
+
+      .source-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.08in;
+      }
+
+      .source-card {
+        min-height: 0.42in;
+        break-inside: avoid;
+      }
+
+      .source-card span {
+        font-size: 7.4pt;
+      }
+
+      .note {
+        margin-top: 0.1in;
+        padding: 0.1in;
+        color: var(--soft);
+        background: var(--water);
+        border: 1px solid #bfd4ce;
+        border-radius: 8px;
+        font-size: 8pt;
+        line-height: 1.35;
+      }
+
+      .page-break {
+        break-before: page;
+      }
+
+      @page {
+        size: Letter;
+        margin: 0;
+      }
+
+      @media print {
+        .page {
+          width: auto;
+          min-height: 11in;
+          padding: 0.48in;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="cover">
+        <p class="eyebrow">Rose Quartz Massage | Competitive pricing printout</p>
+        <h1>Las Vegas massage pricing, services, and offer-gap checklist</h1>
+        <p>Snapshot prepared for internal pricing and service planning. Competitor pricing can change; verify before publishing claims or making final operational commitments.</p>
+      </header>
+
+      <div class="meta-row">
+        <div><strong>Snapshot date</strong><span>May 25, 2026</span></div>
+        <div><strong>Rose one-time rates</strong><span>60 min $145 | 90 min $220 | 120 min $305</span></div>
+        <div><strong>Rose membership rates</strong><span>60 min $125 | 90 min $190 | 120 min $265</span></div>
+      </div>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Competitive Company Pricing</h2>
+          <p>Pricing shown is the closest public comparable found for 60/90/120 minute massage, prenatal, therapeutic, or signature services.</p>
+        </div>
+
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Website</th>
+              <th>Category</th>
+              <th>Public Pricing</th>
+              <th>Shared With Rose</th>
+              <th>Offers Rose Does Not Publicly Offer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Massage Vegas</td>
+              <td><a href="https://www.massagevegas.com/pricing">massagevegas.com/pricing</a></td>
+              <td>Local studio / private suite</td>
+              <td>Private suite: 60 $120, 90 $160, 120 $200. Open room: 60 $60 / $40 special.</td>
+              <td>60/90/120 massage, private massage setting.</td>
+              <td>Open-room low-cost option, couples massage, gift/events positioning.</td>
+            </tr>
+            <tr>
+              <td>Temple Touch Massage</td>
+              <td><a href="https://www.templetouchmassage.com/book">templetouchmassage.com/book</a></td>
+              <td>Mobile/private therapeutic</td>
+              <td>60 $120, 90 $160, 120 $200. Hotel/casino visit +$40. Sciatica add-on +$20.</td>
+              <td>Therapeutic massage, 60/90/120 lengths, focused areas.</td>
+              <td>Mobile hotel/casino service, instant confirmation, sciatica/piriformis add-on, 8 AM-10 PM schedule.</td>
+            </tr>
+            <tr>
+              <td>On The Fly Massage</td>
+              <td><a href="https://www.ontheflymassagevegas.com/massage-rates">ontheflymassagevegas.com/massage-rates</a></td>
+              <td>Strictly therapeutic mobile</td>
+              <td>Swedish 60/90/120: $135/$190/$240. Blend or prenatal: $145/$205/$260. Deep tissue: $155/$220/$280.</td>
+              <td>Swedish-style, prenatal, therapeutic blend, deep/restorative work, couples adjacent.</td>
+              <td>Mobile-only hotel/home delivery, couples massage, spa party, backstage massage.</td>
+            </tr>
+            <tr>
+              <td>Flow Massage Therapy</td>
+              <td><a href="https://flowmassage.info/pricing/">flowmassage.info/pricing</a></td>
+              <td>Specialist studio / mobile</td>
+              <td>Studio cash: 60 $160, 90 $250, 120 $325-$350. Mobile: 60 $250, 90 $375, 120 $500 plus transportation.</td>
+              <td>Therapeutic care, 60/90/120 lengths, premium specialist positioning.</td>
+              <td>Mobile premium pricing, education/resources, products, very high-ticket specialist work.</td>
+            </tr>
+            <tr>
+              <td>IMR Massage</td>
+              <td><a href="https://imrmassage.com/prenatal-massage/">imrmassage.com/prenatal-massage</a></td>
+              <td>Prenatal / medical massage studio</td>
+              <td>Prenatal: 60 $125, 90 $175, 120 $230. Taping add-on starts at $10.</td>
+              <td>Prenatal massage, side-lying support, pregnancy pillow, 60/90/120 sessions.</td>
+              <td>Kinesiology taping, gift cards, membership requests, medical-massage framing.</td>
+            </tr>
+            <tr>
+              <td>Massage Well Las Vegas</td>
+              <td><a href="https://www.massagewellvegas.com/membership">massagewellvegas.com/membership</a></td>
+              <td>Membership studio</td>
+              <td>Member pricing: 60 $60, 90 $90, 120 $120. Membership listed at $20/year.</td>
+              <td>Membership concept, 60/90/120 lengths, Swedish, prenatal.</td>
+              <td>Same-day appointments, couples massage, deep tissue, trigger point, very low member rates.</td>
+            </tr>
+            <tr>
+              <td>Thai Spa Wellness Center</td>
+              <td><a href="https://www.thaispawellnesscenter.com/massage.html">thaispawellnesscenter.com/massage.html</a></td>
+              <td>Thai / wellness spa</td>
+              <td>Thai fusion 60/90/120: $80/$120/$160. Traditional Thai or aromatherapy: $100/$150/$200. Prenatal: 60 $90, 90 $135.</td>
+              <td>Prenatal, aromatics, light-to-deep pressure, gentle bodywork.</td>
+              <td>Traditional Thai, herbal compress, body scrub, four-hands, CBD, cupping, medical post-injury, couples rooms, hot stones included.</td>
+            </tr>
+            <tr>
+              <td>K Spa</td>
+              <td><a href="https://kspamassages.com/">kspamassages.com</a></td>
+              <td>Broad menu spa</td>
+              <td>Basic 60/90/120: $58/$90/$130. Deep tissue: $68/$100/$140. Prenatal: $80/$120/$180. Essential oil: $78/$110/$150.</td>
+              <td>Prenatal, aromatherapy, scalp work, hot stone-adjacent bodywork, 60/90/120 lengths.</td>
+              <td>Cupping, couples, four-hands, foot/combo massage, facials, waxing, body wraps, Asian stretch/walking pressure, sports, salt/sugar scrub.</td>
+            </tr>
+            <tr>
+              <td>June Spa Retreat</td>
+              <td><a href="https://junespalv.com/">junespalv.com</a></td>
+              <td>Thai / spa / skincare</td>
+              <td>60 massage $80, 90 massage $120. Massage + facial combo $145. 60 facial $89.</td>
+              <td>Swedish, deep tissue, sports-style therapeutic massage, Thai combo adjacent bodywork.</td>
+              <td>Facials, waxing, men's grooming, walk-ins, Thai combo massage, sports massage, massage + facial combo.</td>
+            </tr>
+            <tr>
+              <td>Canyon Ranch Las Vegas</td>
+              <td><a href="https://www.canyonranch.com/las-vegas/services/spa-beauty/massage-bodywork/prenatal-massage">canyonranch.com/las-vegas</a></td>
+              <td>Luxury resort spa</td>
+              <td>Prenatal: 50 $240, 80 $360.</td>
+              <td>Prenatal care, comfort/safety positioning, aromatherapy-style oil experience.</td>
+              <td>Resort spa facilities, day pass, group/corporate stays, chakra balancing, stone, warm coconut oil, packages.</td>
+            </tr>
+            <tr>
+              <td>The Spa at Palms</td>
+              <td><a href="https://thespapalms.com/spa/">thespapalms.com/spa</a></td>
+              <td>Casino resort spa</td>
+              <td>Signature 50/80: $160-$175 / $240-$255. Maternity 50: $160-$175. Couples 50/80: $370-$400 / $530-$560.</td>
+              <td>Maternity, aromatherapy, deep tissue, salt-stone-adjacent grounding, scalp/foot add-ons.</td>
+              <td>Steam/dry sauna, lounges, pool access, CBD/hemp, salt stone, Hypervolt, body rituals, facials, waxing, barbershop, gift cards, spa parties.</td>
+            </tr>
+            <tr>
+              <td>AWANA Spa at Resorts World</td>
+              <td><a href="https://www.rwlasvegas.com/wp-content/uploads/2025/10/SPA-00099-Spa-Brochure-F1-Pricing_NoBleed.pdf">rwlasvegas.com spa menu PDF</a></td>
+              <td>Luxury resort spa</td>
+              <td>World massage 60/90: $205-$235 / $295-$335. Prenatal 60/90: $205-$235 / $295-$335. 120-minute rituals often $480-$565.</td>
+              <td>Prenatal, Thai-inspired bodywork, aromatherapy, ritual positioning, therapeutic customization.</td>
+              <td>Fountain of Youth passport, vitality pools, laconium, steam, Rain Walk, Aufguss sauna, sound/vibration rituals, gua sha, Theragun, private couple suites.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>77% Premium-Value Pricing Target</h2>
+          <p>Target uses the independent/studio competitive range. Resort spa pricing is noted separately because it includes facilities and brand premiums.</p>
+        </div>
+        <div class="target-grid">
+          <table>
+            <thead>
+              <tr>
+                <th>Session</th>
+                <th>Comparable Low</th>
+                <th>Comparable High</th>
+                <th>77% Point</th>
+                <th>Rose One-Time</th>
+                <th>Rose Membership</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>60 minutes</td><td>$80</td><td>$160</td><td>$142</td><td>$145</td><td>$125</td></tr>
+              <tr><td>90 minutes</td><td>$120</td><td>$250</td><td>$220</td><td>$220</td><td>$190</td></tr>
+              <tr><td>120 minutes</td><td>$160</td><td>$350</td><td>$306</td><td>$305</td><td>$265</td></tr>
+            </tbody>
+          </table>
+          <div class="summary-card">
+            <h3>Positioning note</h3>
+            <p>Rose Quartz should sit above standard independent pricing while staying below full resort-spa pricing. The page now presents clear premium rates and a recurring-care membership option without separate specialty upcharges.</p>
+            <span>Public pricing page: pricing.html</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-break">
+        <div class="section-head">
+          <h2>Service Checklist</h2>
+          <p>Use the empty boxes to mark keep, add later, reject, or ask Rose about fit.</p>
+        </div>
+        <div class="check-grid">
+          <div class="check-panel">
+            <h3>Shared Products &amp; Services</h3>
+            <ul class="check-list">
+              <li><span class="check"></span><span>60-minute massage sessions</span></li>
+              <li><span class="check"></span><span>90-minute massage sessions</span></li>
+              <li><span class="check"></span><span>120-minute massage sessions</span></li>
+              <li><span class="check"></span><span>Prenatal / maternity massage</span></li>
+              <li><span class="check"></span><span>Side-lying pregnancy support and comfort positioning</span></li>
+              <li><span class="check"></span><span>Swedish-style relaxation or light-to-medium pressure massage</span></li>
+              <li><span class="check"></span><span>Therapeutic / restorative massage for tension and mobility</span></li>
+              <li><span class="check"></span><span>Deep tissue or focused pressure when the body allows</span></li>
+              <li><span class="check"></span><span>Head, scalp, neck, shoulder, and jaw care</span></li>
+              <li><span class="check"></span><span>Lymphatic-style flow or gentle swelling/heaviness support</span></li>
+              <li><span class="check"></span><span>Aromatics or scent-aware options</span></li>
+              <li><span class="check"></span><span>Hot-stone or warm grounding language, if made explicit later</span></li>
+              <li><span class="check"></span><span>Massage membership / recurring-care pricing</span></li>
+              <li><span class="check"></span><span>Aftercare and rebooking rhythm guidance</span></li>
+              <li><span class="check"></span><span>Private, individualized session planning</span></li>
+              <li><span class="check"></span><span>Special-population support for sensitive bodies, seniors, caregivers, and recovery pacing</span></li>
+            </ul>
+          </div>
+          <div class="check-panel">
+            <h3>Competitor Offers Rose Does Not Publicly Offer</h3>
+            <ul class="check-list">
+              <li><span class="check"></span><span>Couples massage / side-by-side sessions</span></li>
+              <li><span class="check"></span><span>Four-hands massage</span></li>
+              <li><span class="check"></span><span>Mobile in-home, hotel, office, casino-suite, or backstage service</span></li>
+              <li><span class="check"></span><span>Walk-ins, same-day appointments, or instant confirmation</span></li>
+              <li><span class="check"></span><span>Corporate event chair massage, spa parties, or group wellness</span></li>
+              <li><span class="check"></span><span>Traditional Thai massage, Thai fusion, assisted stretching, or walking pressure</span></li>
+              <li><span class="check"></span><span>Sports massage as a named service</span></li>
+              <li><span class="check"></span><span>Sciatica, piriformis, trigger point, or medical post-injury add-ons</span></li>
+              <li><span class="check"></span><span>Cupping therapy or cupping add-ons</span></li>
+              <li><span class="check"></span><span>Kinesiology taping</span></li>
+              <li><span class="check"></span><span>Hot stone, Himalayan salt stone, or stone add-ons as bookable upgrades</span></li>
+              <li><span class="check"></span><span>CBD/hemp massage, hemp wraps, or herbal balm upgrades</span></li>
+              <li><span class="check"></span><span>Thai herbal compress</span></li>
+              <li><span class="check"></span><span>Body scrub, foot scrub, salt/sugar scrub, body wrap, or body ritual packages</span></li>
+              <li><span class="check"></span><span>Reflexology / foot massage / combo foot-body massage</span></li>
+              <li><span class="check"></span><span>Facials, Hydrafacial, microdermabrasion, LED, acne care, or back facial</span></li>
+              <li><span class="check"></span><span>Waxing, brow/lash tinting, barbershop, salon, nails, or men's grooming</span></li>
+              <li><span class="check"></span><span>Sauna, steam, pool, vitality pools, lounge, locker-room, day-pass, or resort-facility access</span></li>
+              <li><span class="check"></span><span>Sound bath, singing bowl, chakra balancing, crystal, Aufguss, or guided thermal ritual</span></li>
+              <li><span class="check"></span><span>Theragun, Hypervolt, gua sha, IASTM, NuBody, ice therapy, or technology-based enhancements</span></li>
+              <li><span class="check"></span><span>Gift cards, rollover credits, retail discounts, locals/hospitality/new-client specials, or HSA/FSA receipt support</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Sources</h2>
+          <p>Primary URLs used for this printout. Re-check live pages before quoting externally.</p>
+        </div>
+        <div class="source-grid">
+          <div class="source-card"><strong>Massage Vegas</strong><span>https://www.massagevegas.com/pricing</span></div>
+          <div class="source-card"><strong>Temple Touch Massage</strong><span>https://www.templetouchmassage.com/book</span></div>
+          <div class="source-card"><strong>On The Fly Massage</strong><span>https://www.ontheflymassagevegas.com/massage-rates</span></div>
+          <div class="source-card"><strong>Flow Massage Therapy</strong><span>https://flowmassage.info/pricing/</span></div>
+          <div class="source-card"><strong>IMR Massage</strong><span>https://imrmassage.com/prenatal-massage/</span></div>
+          <div class="source-card"><strong>Massage Well Las Vegas</strong><span>https://www.massagewellvegas.com/membership</span></div>
+          <div class="source-card"><strong>Thai Spa Wellness Center</strong><span>https://www.thaispawellnesscenter.com/massage.html</span></div>
+          <div class="source-card"><strong>K Spa</strong><span>https://kspamassages.com/</span></div>
+          <div class="source-card"><strong>June Spa Retreat</strong><span>https://junespalv.com/</span></div>
+          <div class="source-card"><strong>Canyon Ranch Las Vegas</strong><span>https://www.canyonranch.com/las-vegas/services/spa-beauty/massage-bodywork/prenatal-massage</span></div>
+          <div class="source-card"><strong>The Spa at Palms</strong><span>https://thespapalms.com/spa/</span></div>
+          <div class="source-card"><strong>AWANA Spa at Resorts World</strong><span>https://www.rwlasvegas.com/wp-content/uploads/2025/10/SPA-00099-Spa-Brochure-F1-Pricing_NoBleed.pdf</span></div>
+        </div>
+        <p class="note">Internal use only. The competitor list is a planning artifact, not a public claim page. Some competitors publish multiple price versions, weekday/weekend ranges, member rates, or seasonal rates; the table captures the clearest public comparable found during the May 25, 2026 review.</p>
+      </section>
+    </main>
+  </body>
+</html>

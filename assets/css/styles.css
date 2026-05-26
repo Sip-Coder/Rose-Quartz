@@ -1069,6 +1069,204 @@ section {
   line-height: 1.65;
 }
 
+.pricing-main {
+  padding: clamp(7rem, 11vw, 10rem) clamp(1rem, 5vw, 4.5rem) clamp(4.5rem, 8vw, 7rem);
+  background:
+    radial-gradient(circle at 14% 14%, rgba(242, 177, 176, 0.18), transparent 23rem),
+    radial-gradient(circle at 88% 6%, rgba(139, 184, 173, 0.24), transparent 24rem),
+    linear-gradient(180deg, rgba(251, 248, 239, 0.98), rgba(237, 242, 223, 0.92));
+}
+
+.pricing-hero,
+.pricing-panel {
+  width: min(100%, var(--content-max));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pricing-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 0.54fr);
+  gap: clamp(1.4rem, 4vw, 3.2rem);
+  align-items: end;
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.pricing-hero h1 {
+  max-width: 1000px;
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(3.2rem, 7vw, 6.2rem);
+  line-height: 0.96;
+}
+
+.pricing-hero p {
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 2vw, 1.24rem);
+  line-height: 1.68;
+}
+
+.pricing-hero-note,
+.pricing-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(251, 248, 239, 0.76);
+  box-shadow: 0 18px 64px rgba(49, 75, 54, 0.1);
+}
+
+.pricing-hero-note {
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+}
+
+.pricing-panel {
+  padding: clamp(1rem, 3vw, 1.6rem);
+}
+
+.pricing-panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.1rem;
+}
+
+.pricing-panel-head h2 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(2.1rem, 4vw, 3.35rem);
+  line-height: 1;
+}
+
+.pricing-switch {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem;
+  padding: 0.35rem;
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.pricing-switch button {
+  min-height: 42px;
+  padding: 0.68rem 0.86rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--forest);
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pricing-switch button.is-selected {
+  color: var(--linen);
+  background: var(--forest);
+}
+
+.pricing-grid,
+.pricing-note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.pricing-card {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+  min-height: 580px;
+  padding: clamp(1.15rem, 2.6vw, 1.6rem);
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(237, 242, 223, 0.62)),
+    radial-gradient(circle at 88% 4%, rgba(242, 177, 176, 0.18), transparent 12rem);
+}
+
+.pricing-card-featured {
+  color: var(--linen);
+  background:
+    linear-gradient(145deg, rgba(49, 75, 54, 0.94), rgba(59, 39, 29, 0.94)),
+    radial-gradient(circle at 85% 8%, rgba(210, 168, 92, 0.2), transparent 17rem);
+  box-shadow: 0 22px 70px rgba(49, 75, 54, 0.18);
+}
+
+.pricing-kicker,
+.pricing-card-label {
+  color: var(--wood);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.pricing-card-featured .pricing-kicker,
+.pricing-card-featured .pricing-card-label {
+  color: var(--gold);
+}
+
+.pricing-card h3 {
+  color: var(--forest);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.pricing-card-featured h3 {
+  color: var(--linen);
+}
+
+.pricing-card strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 7vw, 5.2rem);
+  font-weight: 540;
+  line-height: 0.9;
+}
+
+.pricing-card-featured strong {
+  color: var(--linen);
+}
+
+.pricing-card p,
+.pricing-card li,
+.pricing-note-grid p {
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.pricing-card-featured p,
+.pricing-card-featured li {
+  color: rgba(251, 248, 239, 0.78);
+}
+
+.pricing-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.pricing-card .button {
+  align-self: end;
+  width: 100%;
+  margin-top: auto;
+}
+
+.pricing-note-grid {
+  margin-top: 1rem;
+}
+
+.pricing-note-grid article {
+  padding: 1rem;
+  border: 1px solid rgba(49, 75, 54, 0.16);
+  border-radius: var(--radius);
+  background: rgba(244, 239, 228, 0.66);
+}
+
+.pricing-note-grid h3 {
+  color: var(--forest);
+  font-size: 1.24rem;
+}
+
 .method {
   align-items: center;
 }
@@ -2285,6 +2483,7 @@ details p {
   .booking,
   .service-feature,
   .service-page-hero,
+  .pricing-hero,
   .service-detail-card,
   .body-map-tool,
   .article-layout {
@@ -2392,6 +2591,7 @@ details p {
   .booking h2,
   .faq h2,
   .service-page-hero h1,
+  .pricing-hero h1,
   .article-hero h1,
   .journal-library-hero h1 {
     font-size: 2.35rem;
@@ -2431,10 +2631,25 @@ details p {
   .ritual-tool,
   .journal-grid,
   .journal-library-grid,
+  .pricing-grid,
+  .pricing-note-grid,
   .booking-options,
   .body-map-tool,
   .field-row {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-panel-head {
+    display: grid;
+    align-items: start;
+  }
+
+  .pricing-switch {
+    width: 100%;
+  }
+
+  .pricing-card {
+    min-height: auto;
   }
 
   .journal-library-toolbar {
@@ -2561,7 +2776,8 @@ details p {
   .method h2,
   .booking h2,
   .faq h2,
-  .service-page-hero h1 {
+  .service-page-hero h1,
+  .pricing-hero h1 {
     font-size: 2.08rem;
     line-height: 1.08;
   }
@@ -2576,6 +2792,8 @@ details p {
   .session-map,
   .ritual-controls,
   .ritual-card,
+  .pricing-panel,
+  .pricing-card,
   .service-detail-card,
   .article-body,
   .article-aside {

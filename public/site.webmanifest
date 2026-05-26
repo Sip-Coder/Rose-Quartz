@@ -9,10 +9,10 @@
   "theme_color": "#314b36",
   "icons": [
     {
-      "src": "/assets/icons/rose-quartz-mark.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "/rose-quartz-logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

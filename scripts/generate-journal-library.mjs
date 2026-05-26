@@ -914,10 +914,7 @@ const sourceLinks = (ids) => ids.map((id) => sources[id]).filter(Boolean);
 
 const brandMark = `
           <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 48 48" role="img">
-              <path d="M24 4c8.5 5.9 14.1 13.4 14.1 22.1 0 8.8-6.3 15.9-14.1 15.9S9.9 34.9 9.9 26.1C9.9 17.4 15.5 9.9 24 4Z" />
-              <path d="M15.5 27.5c6.2-5.1 11-5.1 17.1 0M18.2 20.1c4-2.8 7.7-2.8 11.6 0M19.6 33.3c3.1 1.4 5.7 1.4 8.8 0" />
-            </svg>
+            <img src="/rose-quartz-logo.png" alt="Rose Quartz Massage" width="45" height="45" style="border-radius:50%;object-fit:cover;">
           </span>`;
 
 const articleHeader = (prefix = "../") => `
@@ -931,6 +928,7 @@ ${brandMark}
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="${prefix}services.html">Services</a>
+        <a href="${prefix}pricing.html">Pricing</a>
         <a href="${prefix}index.html#about">About</a>
         <a href="${prefix}index.html#method">Method</a>
         <a href="${prefix}index.html#care-style">Care Style</a>
@@ -945,6 +943,7 @@ ${brandMark}
 
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
       <a href="${prefix}services.html">Services</a>
+      <a href="${prefix}pricing.html">Pricing</a>
       <a href="${prefix}index.html#about">About</a>
       <a href="${prefix}index.html#method">Method</a>
       <a href="${prefix}index.html#care-style">Care Style</a>
@@ -966,6 +965,7 @@ ${brandMark}
       </div>
       <div class="footer-links">
         <a href="${prefix}services.html">Services</a>
+        <a href="${prefix}pricing.html">Pricing</a>
         <a href="${prefix}index.html#about">About</a>
         <a href="${prefix}care-standards.html">Care Standards</a>
         <a href="${prefix}privacy-intake.html">Privacy</a>
@@ -989,7 +989,7 @@ const articleTemplate = (article, index) => {
     publisher: {
       "@type": "Organization",
       name: "Rose Quartz Massage",
-      logo: { "@type": "ImageObject", url: "/assets/icons/rose-quartz-mark.svg" }
+      logo: { "@type": "ImageObject", url: "/rose-quartz-logo.png" }
     },
     about: article.tags
   };
@@ -1016,7 +1016,7 @@ const articleTemplate = (article, index) => {
     <meta name="twitter:title" content="${escapeHtml(article.title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${article.image}">
-    <link rel="icon" href="/assets/icons/rose-quartz-mark.svg" type="image/svg+xml">
+    <link rel="icon" href="/rose-quartz-logo.png" type="image/png">
     <link rel="manifest" href="/site.webmanifest">
     <script type="application/ld+json">
       ${JSON.stringify(jsonLd, null, 6)}
@@ -1116,7 +1116,7 @@ const journalIndexTemplate = () => {
     <meta name="twitter:title" content="Rose Quartz Massage Journal Library">
     <meta name="twitter:description" content="36 in-depth articles on light-touch massage, prenatal comfort, nervous-system support, lymphatic flow, and restorative aftercare.">
     <meta name="twitter:image" content="/assets/images/journal/seven-waters-method.jpg">
-    <link rel="icon" href="/assets/icons/rose-quartz-mark.svg" type="image/svg+xml">
+    <link rel="icon" href="/rose-quartz-logo.png" type="image/png">
     <link rel="manifest" href="/site.webmanifest">
     <script type="application/ld+json">
       ${JSON.stringify({

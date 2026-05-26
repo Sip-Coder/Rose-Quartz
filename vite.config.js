@@ -20,6 +20,7 @@ export default defineConfig({
       input: {
         main: resolve("index.html"),
         services: resolve("services.html"),
+        pricing: resolve("pricing.html"),
         careStandards: resolve("care-standards.html"),
         privacyIntake: resolve("privacy-intake.html"),
         journal: resolve("journal.html"),

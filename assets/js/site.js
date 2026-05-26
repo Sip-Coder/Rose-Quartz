@@ -30,6 +30,7 @@ const ritualReturn = document.querySelector("[data-ritual-return]");
 const ritualApply = document.querySelector("[data-ritual-apply]");
 const pricingModeButtons = document.querySelectorAll("[data-pricing-mode]");
 const priceCards = document.querySelectorAll("[data-price-card]");
+const durationButtons = document.querySelectorAll("[data-duration]");
 
 const sessionMap = {
   zones: new Set(),
@@ -213,16 +214,57 @@ if (navToggle && mobileMenu) {
   });
 }
 
-document.querySelectorAll("[data-duration]").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll("[data-duration]").forEach((item) => {
-      item.classList.remove("is-selected");
-    });
-    button.classList.add("is-selected");
-    if (durationInput) durationInput.value = button.dataset.duration;
-    if (priceInput) priceInput.value = button.dataset.price;
+const selectDuration = (duration) => {
+  const button = [...durationButtons].find((item) => item.dataset.duration === duration);
+  if (!button) return;
+
+  durationButtons.forEach((item) => {
+    item.classList.remove("is-selected");
   });
+  button.classList.add("is-selected");
+  if (durationInput) durationInput.value = button.dataset.duration;
+  if (priceInput) priceInput.value = button.dataset.price;
+};
+
+durationButtons.forEach((button) => {
+  button.addEventListener("click", () => selectDuration(button.dataset.duration));
 });
+
+const applyBookingIntent = () => {
+  if (!bookingForm) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const focus = params.get("focus");
+  const duration = params.get("duration");
+  const note = params.get("note");
+
+  if (focusSelect && focus) {
+    const option = [...focusSelect.options].find((item) => item.value === focus || item.textContent === focus);
+    if (option) focusSelect.value = option.value;
+  }
+
+  if (duration) selectDuration(duration);
+
+  if (notesField && note && !notesField.value) {
+    notesField.value = note;
+  }
+};
+
+applyBookingIntent();
+
+if (document.querySelector("[data-panorama-viewer]")) {
+  import("./panorama-viewer.js")
+    .then(({ initializePanoramaViewers }) => initializePanoramaViewers())
+    .catch(() => {
+      document.querySelectorAll("[data-panorama-viewer]").forEach((viewer) => {
+        viewer.classList.add("has-panorama-fallback");
+        const fallback = viewer.querySelector("[data-panorama-fallback]");
+        const canvas = viewer.querySelector("[data-panorama-canvas]");
+        if (fallback) fallback.hidden = false;
+        if (canvas) canvas.hidden = true;
+      });
+    });
+}
 
 const listText = (items, fallback) => {
   const values = [...items];
@@ -543,14 +585,14 @@ if (bookingForm && summary) {
     summary.replaceChildren();
 
     const title = document.createElement("strong");
-    title.textContent = "Request drafted for Rose";
+    title.textContent = "Request preview";
 
     summary.append(
       title,
       document.createElement("br"),
-      document.createTextNode(`${name}, your ${duration} ${focus} request is ready to send. Session rate: ${price}.`),
+      document.createTextNode(`${name}, your ${duration} ${focus} request preview is ready. Session rate: ${price}.`),
       document.createElement("br"),
-      document.createTextNode("Rose will confirm timing, comfort needs, and the best appointment path for your care."),
+      document.createTextNode("Use Rose's confirmed contact or booking method to send these details. Rose should confirm timing, comfort needs, and the best appointment path before care."),
     );
 
     if (bodyZones) {

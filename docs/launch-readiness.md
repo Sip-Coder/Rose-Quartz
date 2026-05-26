@@ -4,6 +4,7 @@ This site is ready as a polished prototype, but a real launch still needs Rose's
 
 ## Required Before Public Launch
 
+- Copy `docs/launch-facts.template.json` to `docs/launch-facts.json`, fill it with real public business facts, then run `npm.cmd run launch-check:strict`.
 - Add Rose's real phone number, email, and preferred contact method.
 - Add the final booking platform URL or replace the draft booking form with the live booking integration.
 - Add Rose's license number and any required Nevada massage/business disclosures.
@@ -14,6 +15,22 @@ This site is ready as a polished prototype, but a real launch still needs Rose's
 - Add real testimonials only after Rose has permission to publish them.
 - Add final production domain and canonical URLs.
 - Generate the production sitemap after the domain is selected: `npm.cmd run sitemap -- --site-url=https://your-real-domain.com`.
+
+## Verification Commands
+
+- Prototype readiness: `npm.cmd run launch-check`
+- Strict public-launch gate: `npm.cmd run launch-check:strict`
+- Production build: `npm.cmd run build`
+- Sitemap dry run: `npm.cmd run sitemap -- --site-url=https://your-real-domain.com --dry-run`
+
+## Publish Workflow
+
+1. Copy `docs/launch-facts.template.json` to `docs/launch-facts.json`.
+2. Fill every field with real approved business facts, not placeholders.
+3. Run `npm.cmd run launch-facts:apply` to render the real details into customer-facing pages and add canonical URLs / absolute social metadata.
+4. Review the updated public pages, especially the First Visit guide, to confirm the copy is accurate and approved.
+5. Run `npm.cmd run launch-check:strict`; it should fail if facts exist only in JSON but are not visible on the public site.
+6. Run the production build and sitemap command before publishing.
 
 ## Recommended Trust Additions
 

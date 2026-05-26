@@ -70,9 +70,19 @@ function normalizeSiteUrl(value) {
 }
 
 function collectPages() {
-  const rootPages = ["index.html", "services.html", "pricing.html", "care-standards.html", "privacy-intake.html", "journal.html"].map(
-    (file) => resolve(rootDir, file)
-  );
+  const rootPages = [
+    "index.html",
+    "services.html",
+    "pricing.html",
+    "first-visit.html",
+    "prenatal-massage.html",
+    "lymphatic-massage.html",
+    "headache-jaw-massage.html",
+    "sensitive-body-massage.html",
+    "care-standards.html",
+    "privacy-intake.html",
+    "journal.html"
+  ].map((file) => resolve(rootDir, file));
 
   const journalDir = join(rootDir, "journal");
   const journalPages = readdirSync(journalDir)
@@ -99,6 +109,8 @@ function priorityFor(relPath) {
   if (relPath === "index.html") return "1.0";
   if (relPath === "services.html") return "0.9";
   if (relPath === "pricing.html") return "0.9";
+  if (relPath === "first-visit.html") return "0.85";
+  if (relPath.endsWith("-massage.html")) return "0.85";
   if (relPath === "journal.html") return "0.8";
   if (relPath === "care-standards.html") return "0.7";
   if (relPath === "privacy-intake.html") return "0.7";

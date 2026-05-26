@@ -6,9 +6,15 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
+    "launch-facts:apply": "node scripts/apply-launch-facts.mjs",
+    "launch-check": "node scripts/validate-launch-readiness.mjs",
+    "launch-check:strict": "node scripts/validate-launch-readiness.mjs --strict-launch",
     "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "devDependencies": {
     "vite": "^7.2.6"
+  },
+  "dependencies": {
+    "three": "^0.183.2"
   }
 }

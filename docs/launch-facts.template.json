@@ -1,0 +1,40 @@
+{
+  "business": {
+    "name": "Rose Quartz Massage",
+    "phone": "",
+    "email": "",
+    "preferredContact": "",
+    "bookingUrl": "",
+    "licenseNumber": "",
+    "requiredDisclosures": "",
+    "serviceAreaOrAddressPolicy": "",
+    "hours": {
+      "summary": "",
+      "timezone": "America/Los_Angeles"
+    },
+    "policies": {
+      "cancellation": "",
+      "lateArrival": "",
+      "noShow": "",
+      "illness": "",
+      "rescheduling": ""
+    },
+    "accessibility": {
+      "parking": "",
+      "stairsElevator": "",
+      "restroom": "",
+      "scentPolicy": "",
+      "mobility": ""
+    }
+  },
+  "proof": {
+    "testimonialsApproved": false,
+    "testimonialSource": "",
+    "reviewLinks": [],
+    "photoAssets": []
+  },
+  "seo": {
+    "productionDomain": "",
+    "canonicalBaseUrl": ""
+  }
+}

@@ -714,6 +714,10 @@
             <span>What should Rose know?</span>
             <textarea name="notes" rows="5" placeholder="Share comfort needs, pressure preferences, pregnancy stage, pain areas, or the energy you want from the session." data-notes-field></textarea>
           </label>
+          <label>
+            <span>Timing and access needs</span>
+            <textarea name="logistics" rows="3" placeholder="Share preferred days or times, mobility needs, stairs or parking concerns, or anything Rose should consider before confirming." data-logistics-field></textarea>
+          </label>
           <input type="hidden" name="duration" value="60 minutes" data-duration-input>
           <input type="hidden" name="price" value="$145" data-price-input>
           <input type="hidden" name="bodyZones" data-body-zones-input>
@@ -728,6 +732,16 @@
           </button>
           <p class="form-note">Rose will review comfort needs, timing, and fit before confirming your appointment. Review the <a href="care-standards.html">care standards</a> and <a href="privacy-intake.html">privacy and intake notes</a> before sending sensitive medical details.</p>
           <output class="booking-summary" data-booking-summary hidden></output>
+          <div class="booking-handoff" data-booking-handoff hidden>
+            <label class="booking-handoff-label">
+              <span>Copyable request draft</span>
+              <textarea rows="8" readonly data-booking-handoff-text></textarea>
+            </label>
+            <button class="button button-tertiary booking-copy-button" type="button" data-copy-booking>
+              Copy request draft
+            </button>
+            <p class="booking-copy-status" data-copy-status aria-live="polite">Use this with Rose's confirmed contact method.</p>
+          </div>
         </form>
       </section>
 

@@ -5,6 +5,10 @@ const durationInput = document.querySelector("[data-duration-input]");
 const priceInput = document.querySelector("[data-price-input]");
 const summary = document.querySelector("[data-booking-summary]");
 const bookingForm = document.querySelector("[data-booking-form]");
+const bookingHandoff = document.querySelector("[data-booking-handoff]");
+const bookingHandoffText = document.querySelector("[data-booking-handoff-text]");
+const copyBookingButton = document.querySelector("[data-copy-booking]");
+const copyStatus = document.querySelector("[data-copy-status]");
 const bodyZonesInput = document.querySelector("[data-body-zones-input]");
 const sensationsInput = document.querySelector("[data-sensations-input]");
 const pressureInput = document.querySelector("[data-pressure-input]");
@@ -571,7 +575,10 @@ if (bookingForm && summary) {
     event.preventDefault();
     const formData = new FormData(bookingForm);
     const name = formData.get("name");
+    const contact = formData.get("contact");
     const focus = formData.get("focus");
+    const notes = formData.get("notes");
+    const logistics = formData.get("logistics");
     const duration = formData.get("duration");
     const price = formData.get("price");
     const bodyZones = formData.get("bodyZones");
@@ -593,6 +600,8 @@ if (bookingForm && summary) {
       document.createTextNode(`${name}, your ${duration} ${focus} request draft is ready. Session rate: ${price}.`),
       document.createElement("br"),
       document.createTextNode("Review these details before sending them through Rose's confirmed contact method. Rose will confirm timing, comfort needs, and the best appointment path before care."),
+      document.createElement("br"),
+      document.createTextNode(`Contact: ${contact}.`),
     );
 
     if (bodyZones) {
@@ -614,6 +623,61 @@ if (bookingForm && summary) {
         document.createElement("br"),
         document.createTextNode(`Care Compass: ${careCompass}`),
       );
+    }
+
+    if (notes) {
+      summary.append(
+        document.createElement("br"),
+        document.createTextNode(`Notes: ${notes}`),
+      );
+    }
+
+    if (logistics) {
+      summary.append(
+        document.createElement("br"),
+        document.createTextNode(`Timing and access needs: ${logistics}`),
+      );
+    }
+
+    if (bookingHandoff && bookingHandoffText && copyStatus) {
+      const requestDraft = [
+        "Rose Quartz care request preview",
+        `Name: ${name}`,
+        `Contact: ${contact}`,
+        `Care focus: ${focus}`,
+        `Session length: ${duration}`,
+        `Session rate: ${price}`,
+        bodyZones ? `Session map: ${bodyZones}` : "",
+        sensations ? `Sensations: ${sensations}` : "",
+        pressure ? `Pressure: ${pressure}` : "",
+        tone ? `Session tone: ${tone}` : "",
+        recommendation ? `Suggested pathway: ${recommendation}` : "",
+        careCompass ? `Care Compass: ${careCompass}` : "",
+        notes ? `Notes: ${notes}` : "",
+        logistics ? `Timing and access needs: ${logistics}` : "",
+      ].filter(Boolean).join("\n");
+
+      bookingHandoff.hidden = false;
+      bookingHandoffText.value = requestDraft;
+      copyStatus.textContent = "Use this with Rose's confirmed contact method.";
+      bookingHandoff.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  });
+}
+
+if (copyBookingButton && bookingHandoffText && copyStatus) {
+  copyBookingButton.addEventListener("click", async () => {
+    const text = bookingHandoffText.value.trim();
+    if (!text) return;
+
+    try {
+      await navigator.clipboard.writeText(text);
+      copyStatus.textContent = "Request draft copied.";
+    } catch {
+      bookingHandoffText.focus();
+      bookingHandoffText.select();
+      const copied = document.execCommand("copy");
+      copyStatus.textContent = copied ? "Request draft copied." : "Select the draft text and copy it manually.";
     }
   });
 }

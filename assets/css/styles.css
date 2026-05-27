@@ -2633,6 +2633,44 @@ textarea:focus {
   line-height: 1.6;
 }
 
+.booking-handoff {
+  display: grid;
+  gap: 0.72rem;
+  margin-top: 0.9rem;
+  padding: 1rem;
+  border: 1px solid rgba(49, 75, 54, 0.2);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.booking-handoff[hidden] {
+  display: none;
+}
+
+.booking-handoff-label {
+  margin-bottom: 0;
+}
+
+.booking-handoff textarea {
+  min-height: 210px;
+  color: var(--forest);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.booking-copy-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.booking-copy-status {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
 .quick-booking-bar {
   display: none;
 }
@@ -3677,6 +3715,7 @@ details p {
   .booking-assurance,
   .confidence-grid article,
   .session-map,
+  .booking-handoff,
   .experience-360-copy-card,
   .ritual-controls,
   .ritual-card,

@@ -1,6 +1,6 @@
 # Competitive Website Review
 
-Updated: 2026-05-26
+Updated: 2026-05-27
 
 ## Positioning Decision
 
@@ -36,6 +36,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 
 - Stronger homepage first-viewport decision paths.
 - New Client Care Mapping Session as the best first appointment.
+- A homepage best-fit decision section that lets unsure guests choose by body state before reading the full service menu.
 - More explicit value around clear rates, pressure consent, and Rose-reviewed intake.
 - Services page now starts with a mapping-session snapshot.
 - Pricing page explains first-visit value and transparent membership positioning.
@@ -51,6 +52,18 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Real phone, email, license number, service area or address, hours, and policy details.
 - Testimonials or review links only after Rose has permission to publish them.
 - Real room, table, practitioner, or arrival photography to replace any purely atmospheric proof points.
+
+## Continuation Notes From May 27
+
+After the 360 room-view pass, the next competitive gap was not more atmosphere. The strongest missing conversion layer was faster self-selection for unsure guests. Resort and local clinic competitors tend to separate guests by treatment type, price, booking readiness, and practical eligibility. Rose Quartz now answers that earlier on the homepage with a body-state fit guide:
+
+- New or unsure guests go to Care Mapping.
+- Pregnant guests go to prenatal comfort.
+- Pressure-sensitive guests go to nervous-system reset.
+- Headache and clenching guests go to head/jaw care.
+- Swelling, heaviness, and travel-fatigue guests go to lymphatic-style care.
+
+This keeps Rose Quartz premium and human while reducing the new-customer decision load that stronger competitors handle with larger menus, booking widgets, memberships, or front-desk guidance.
 
 ## Source Set
 

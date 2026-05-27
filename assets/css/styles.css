@@ -448,6 +448,7 @@ section {
 .new-client-offer,
 .bio,
 .services,
+.fit-finder,
 .method,
 .care-style,
 .experience,
@@ -469,6 +470,7 @@ section {
 .section-heading,
 .service-feature,
 .service-grid,
+.fit-finder-grid,
 .service-snapshot,
 .method,
 .care-style-grid,
@@ -1016,6 +1018,114 @@ section {
 .journal-grid p {
   margin-bottom: 1.4rem;
   font-size: 0.96rem;
+}
+
+.fit-finder {
+  background:
+    linear-gradient(180deg, rgba(251, 248, 239, 0.92), rgba(237, 242, 223, 0.68)),
+    radial-gradient(circle at 82% 12%, rgba(242, 177, 176, 0.18), transparent 28rem);
+}
+
+.fit-finder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) repeat(2, minmax(0, 0.96fr));
+  gap: 1rem;
+}
+
+.fit-finder-grid article {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  min-height: 360px;
+  padding: clamp(1rem, 2.5vw, 1.55rem);
+  border: 1px solid rgba(49, 75, 54, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0 18px 56px rgba(49, 75, 54, 0.08);
+}
+
+.fit-finder-grid article:first-child {
+  color: var(--linen);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(210, 168, 92, 0.24), transparent 18rem),
+    linear-gradient(145deg, rgba(49, 75, 54, 0.96), rgba(23, 33, 26, 0.94));
+}
+
+.fit-finder-grid span {
+  color: var(--wood);
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.fit-finder-grid article:first-child span,
+.fit-finder-grid article:first-child h3,
+.fit-finder-grid article:first-child dt {
+  color: var(--gold);
+}
+
+.fit-finder-grid h3 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(1.7rem, 3vw, 2.55rem);
+  line-height: 1;
+}
+
+.fit-finder-grid p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.58;
+}
+
+.fit-finder-grid article:first-child p,
+.fit-finder-grid article:first-child dd {
+  color: rgba(251, 248, 239, 0.8);
+}
+
+.fit-finder-grid dl {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.fit-finder-grid dl div {
+  display: grid;
+  gap: 0.16rem;
+  padding: 0.72rem;
+  border: 1px solid rgba(49, 75, 54, 0.12);
+  border-radius: calc(var(--radius) - 2px);
+  background: rgba(251, 248, 239, 0.5);
+}
+
+.fit-finder-grid article:first-child dl div {
+  border-color: rgba(251, 248, 239, 0.18);
+  background: rgba(251, 248, 239, 0.07);
+}
+
+.fit-finder-grid dt {
+  color: var(--wood);
+  font-size: 0.68rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.fit-finder-grid dd {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.42;
+}
+
+.fit-finder-grid a {
+  align-self: end;
+  color: var(--wood);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.fit-finder-grid article:first-child a {
+  color: var(--gold);
 }
 
 .service-card a,
@@ -2920,6 +3030,7 @@ details p {
   .trust-strip,
   .mapping-flow,
   .service-grid,
+  .fit-finder-grid,
   .care-style-grid,
   .experience-grid,
   .pricing-focus-grid,
@@ -3053,6 +3164,7 @@ details p {
   .new-client-offer,
   .bio,
   .services,
+  .fit-finder,
   .method,
   .care-style,
   .experience,
@@ -3110,6 +3222,7 @@ details p {
   .trust-strip,
   .edge-grid,
   .service-grid,
+  .fit-finder-grid,
   .service-menu,
   .service-planning,
   .care-style-grid,

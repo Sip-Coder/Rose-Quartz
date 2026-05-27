@@ -18,6 +18,9 @@ Updated: 2026-05-27
 - The First Visit guide now includes a five-minute prep checklist so guests can name goals, boundaries, cautions, and privacy limits before drafting a request.
 - Homepage guest questions now answer whether the request form confirms an appointment, how to keep sensitive details minimal, and how unsure guests can start with Care Mapping.
 - Homepage FAQ answers now have matching FAQPage structured data for search visibility without adding unsupported launch facts.
+- The hero now presents the 90-minute New Client Care Mapping path as the recommended first-visit offer with duration, rate, outcomes, and a request link.
+- The homepage request-confidence guide now covers mapping, ask-first notes, minimal private disclosure, and provider-clearance pauses before a guest drafts a request.
+- Custom conversion controls now have visible keyboard focus styling across hero links, care chips, map zones, session-length options, and trust links.
 
 ## Validation Recipe
 

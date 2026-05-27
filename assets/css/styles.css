@@ -2417,6 +2417,70 @@ section[id] {
   line-height: 1.5;
 }
 
+.booking-trust {
+  display: grid;
+  gap: 0.86rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(251, 248, 239, 0.92), rgba(237, 242, 223, 0.76)),
+    repeating-linear-gradient(110deg, rgba(49, 75, 54, 0.04) 0 1px, transparent 1px 13px);
+}
+
+.booking-trust h3 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  line-height: 1.05;
+}
+
+.booking-trust p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.booking-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.64rem;
+}
+
+.booking-trust-grid a {
+  display: grid;
+  gap: 0.38rem;
+  min-height: 138px;
+  padding: 0.82rem;
+  border: 1px solid rgba(49, 75, 54, 0.14);
+  border-radius: var(--radius);
+  color: inherit;
+  background: rgba(255, 255, 255, 0.54);
+  text-decoration: none;
+}
+
+.booking-trust-grid span {
+  color: var(--wood);
+  font-size: 0.7rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.booking-trust-grid strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.18rem;
+  font-weight: 540;
+  line-height: 1.08;
+}
+
+.booking-trust-grid small {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
 .session-map {
   margin-top: 1rem;
   padding: 1rem;
@@ -3343,6 +3407,7 @@ details p {
   .experience-grid,
   .confidence-grid,
   .pricing-focus-grid,
+  .booking-trust-grid,
   .journal-grid,
   .journal-library-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3548,6 +3613,7 @@ details p {
   .journal-library-grid,
   .pricing-grid,
   .pricing-note-grid,
+  .booking-trust-grid,
   .booking-options,
   .body-map-tool,
   .field-row {
@@ -3827,6 +3893,7 @@ details p {
   .bio-card,
   .mapping-card,
   .booking-form,
+  .booking-trust,
   .booking-assurance,
   .session-map-card,
   .sample-map-proof,

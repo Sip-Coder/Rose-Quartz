@@ -50,6 +50,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Booking section now explains what Rose confirms before accepting an appointment.
 - The request preview now creates a copyable care-request draft, which gives guests a practical handoff until a live booking destination is available.
 - Homepage request flow now includes a trust-before-details module that explains the preview, copy, confirm, and accept handoff while pointing new guests to First Visit, Care Standards, and Privacy/Intake before they draft sensitive notes.
+- Homepage guest questions now clarify that the request form is a preview, how to keep sensitive notes minimal, and where unsure guests should start.
 - Dedicated specialty landing pages now support prenatal, lymphatic, headache/jaw, and sensitive-body search intent.
 - First Visit guide now gives new guests a five-minute prep checklist plus arrival, draping, pressure, positioning, aftercare, and confirmation expectations before booking.
 - The homepage decision row now keeps first-time guests focused on care mapping, first-visit expectations, and rates instead of making the 360 preview compete with practical booking decisions.

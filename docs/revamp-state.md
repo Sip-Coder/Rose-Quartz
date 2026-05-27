@@ -16,6 +16,7 @@ Updated: 2026-05-27
 - The request flow now explains trust, intake boundaries, and the preview/copy/contact/confirmation handoff before details are entered, then creates a copyable draft instead of pretending a live booking integration exists.
 - Pricing, services, first-visit, and specialty pages now carry clearer conversion paths for unsure guests, including a post-first-visit care-rhythm explanation that avoids unsupported membership terms.
 - The First Visit guide now includes a five-minute prep checklist so guests can name goals, boundaries, cautions, and privacy limits before drafting a request.
+- Homepage guest questions now answer whether the request form confirms an appointment, how to keep sensitive details minimal, and how unsure guests can start with Care Mapping.
 
 ## Validation Recipe
 

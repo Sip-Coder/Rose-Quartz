@@ -590,9 +590,9 @@ if (bookingForm && summary) {
     summary.append(
       title,
       document.createElement("br"),
-      document.createTextNode(`${name}, your ${duration} ${focus} request preview is ready. Session rate: ${price}.`),
+      document.createTextNode(`${name}, your ${duration} ${focus} request draft is ready. Session rate: ${price}.`),
       document.createElement("br"),
-      document.createTextNode("Use Rose's confirmed contact or booking method to send these details. Rose should confirm timing, comfort needs, and the best appointment path before care."),
+      document.createTextNode("Review these details before sending them through Rose's confirmed contact method. Rose will confirm timing, comfort needs, and the best appointment path before care."),
     );
 
     if (bodyZones) {

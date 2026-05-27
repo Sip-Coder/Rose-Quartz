@@ -37,6 +37,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Stronger homepage first-viewport decision paths.
 - New Client Care Mapping Session as the best first appointment.
 - A homepage best-fit decision section that lets unsure guests choose by body state before reading the full service menu.
+- A Services-page comparison menu that turns pathways into scannable, bookable decisions with best fit, starting length, price anchors, and next-step links.
 - More explicit value around clear rates, pressure consent, and Rose-reviewed intake.
 - Services page now starts with a mapping-session snapshot.
 - Pricing page explains first-visit value and transparent membership positioning.

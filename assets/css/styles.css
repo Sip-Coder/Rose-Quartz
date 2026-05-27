@@ -748,7 +748,7 @@ section[id] {
   padding: clamp(4.5rem, 9vw, 8rem) clamp(1rem, 5vw, 4.5rem);
   background:
     linear-gradient(180deg, rgba(251, 248, 239, 0.96), rgba(244, 239, 228, 0.86)),
-    radial-gradient(circle at 88% 14%, rgba(139, 184, 173, 0.18), transparent 24rem);
+    linear-gradient(90deg, rgba(139, 184, 173, 0.08), transparent 45%, rgba(210, 168, 92, 0.08));
 }
 
 .sample-map-shell {
@@ -834,7 +834,7 @@ section[id] {
   padding: clamp(1rem, 3vw, 1.8rem);
   background:
     linear-gradient(150deg, rgba(49, 75, 54, 0.94), rgba(23, 33, 26, 0.94)),
-    radial-gradient(circle at 88% 12%, rgba(210, 168, 92, 0.18), transparent 18rem);
+    repeating-linear-gradient(135deg, rgba(251, 248, 239, 0.06) 0 1px, transparent 1px 18px);
 }
 
 .sample-map-proof h3 {
@@ -1637,6 +1637,12 @@ section[id] {
   color: var(--forest);
   font-size: clamp(2.2rem, 4vw, 3.35rem);
   line-height: 1;
+}
+
+.pricing-focus-copy {
+  max-width: 32rem;
+  color: var(--ink-soft);
+  line-height: 1.62;
 }
 
 .pricing-focus-grid {

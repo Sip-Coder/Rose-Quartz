@@ -660,7 +660,11 @@ if (bookingForm && summary) {
       bookingHandoff.hidden = false;
       bookingHandoffText.value = requestDraft;
       copyStatus.textContent = "Use this with Rose's confirmed contact method.";
-      bookingHandoff.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      bookingHandoff.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      window.setTimeout(() => {
+        bookingHandoffText.focus({ preventScroll: true });
+      }, reduceMotion ? 0 : 220);
     }
   });
 }

@@ -37,6 +37,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Stronger homepage first-viewport decision paths.
 - New Client Care Mapping Session as the best first appointment.
 - A sample Rose Session Map that makes the first-visit deliverable tangible without inventing reviews, license details, or live booking proof.
+- Pricing and First Visit pages now point guests to the sample Session Map so the first-session value is visible before a request draft is created.
 - A homepage best-fit decision section that lets unsure guests choose by body state before reading the full service menu.
 - A Services-page comparison menu that turns pathways into scannable, bookable decisions with best fit, starting length, price anchors, and next-step links.
 - A homepage booking-confidence section that tells unsure guests whether to book mapping, ask Rose first, or pause for provider guidance.
@@ -69,6 +70,8 @@ After the 360 room-view pass, the next competitive gap was not more atmosphere. 
 - Swelling, heaviness, and travel-fatigue guests go to lymphatic-style care.
 
 This keeps Rose Quartz premium and human while reducing the new-customer decision load that stronger competitors handle with larger menus, booking widgets, memberships, or front-desk guidance.
+
+The latest continuation links that tangible sample output into pricing and first-visit guidance, then improves the generated request draft handoff so keyboard and screen-reader users land on the copyable draft after previewing their details.
 
 ## Source Set
 

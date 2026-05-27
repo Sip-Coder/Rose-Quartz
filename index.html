@@ -779,12 +779,12 @@
           <div class="booking-handoff" data-booking-handoff hidden>
             <label class="booking-handoff-label">
               <span>Copyable request draft</span>
-              <textarea rows="8" readonly data-booking-handoff-text></textarea>
+              <textarea rows="8" readonly aria-describedby="booking-copy-status" data-booking-handoff-text></textarea>
             </label>
             <button class="button button-tertiary booking-copy-button" type="button" data-copy-booking>
               Copy request draft
             </button>
-            <p class="booking-copy-status" data-copy-status aria-live="polite">Use this with Rose's confirmed contact method.</p>
+            <p class="booking-copy-status" id="booking-copy-status" data-copy-status aria-live="polite">Use this with Rose's confirmed contact method.</p>
           </div>
         </form>
       </section>

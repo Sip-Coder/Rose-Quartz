@@ -63,6 +63,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Journal article templates and the Privacy/Intake page now use preview-era language instead of stale live-booking labels, so search-entry education pages match the current request-preview promise.
 - Journal article CTAs now prefill the request preview with the article's likely focus, duration, and note context, closing part of the education-to-conversion gap competitors solve with direct booking widgets.
 - The homepage request path now surfaces the trust handoff and form before the optional body-map tool, reducing mobile friction for guests who are ready to preview a request without completing a longer intake interaction.
+- Pricing copy now states that listed one-time rates are the source of truth, avoiding future package, gift-card, deposit, or membership language until those offers have real approved terms.
 - Dedicated specialty landing pages now support prenatal, lymphatic, headache/jaw, and sensitive-body search intent.
 - First Visit guide now gives new guests a five-minute prep checklist plus arrival, draping, pressure, positioning, aftercare, and confirmation expectations before booking.
 - The homepage decision row now keeps first-time guests focused on care mapping, first-visit expectations, and rates instead of making the 360 preview compete with practical booking decisions.
@@ -105,6 +106,8 @@ The journal and privacy-language pass closes a search-entry consistency gap. Gue
 The latest journal-request pass makes those education pages more actionable without pretending Rose has a live scheduler. Article CTAs now carry the guest's reading context into the preview form, including likely focus, session length, and a short note Rose can review. This borrows the conversion clarity of competitor booking widgets while preserving Rose Quartz's preview-copy-confirm workflow until real contact and booking facts are approved.
 
 The latest booking-flow pass addresses mobile conversion friction. Competitors with live schedulers can send guests straight into appointment selection, while Rose's preview flow still needs to explain the handoff. The request section now shows the trust steps and form before the body-map tool, and presents the Rose Session Map as optional context for guests who want to share more detail.
+
+The latest pricing-copy pass tightens another competitor gap without inventing offers. Competitors can publish memberships, gift cards, deposits, and packages when those terms exist; Rose now keeps the public pricing promise simpler by making the listed one-time rates the source of truth and keeping recurring-care language tied to Rose's post-session recommendation.
 
 ## Source Set
 

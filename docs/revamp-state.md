@@ -29,6 +29,7 @@ Updated: 2026-05-27
 - Journal article pages and Privacy/Intake now use preview-era language, and the launch-readiness check scans generated journal pages for stale live-booking labels.
 - Journal article CTAs now carry article context into the request preview with prefilled focus, duration, and notes so search-entry guests do not land in a blank form.
 - The homepage request section now puts the trust handoff and form before the body-map tool, with the Rose Session Map framed as optional context instead of a required first step on mobile.
+- The pricing page now treats one-time rates as the source of truth and removes future package, gift-card, deposit, and membership planning language from public copy.
 
 ## Validation Recipe
 

@@ -170,7 +170,10 @@ function assertNoPublicCopySmell(page, html) {
     "public launch",
     "before launch",
     "launch still",
-    "should be visible"
+    "should be visible",
+    "before terms are real",
+    "future package",
+    "published only after"
   ];
 
   for (const smell of copySmells) {

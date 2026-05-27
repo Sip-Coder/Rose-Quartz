@@ -38,6 +38,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - New Client Care Mapping Session as the best first appointment.
 - A homepage best-fit decision section that lets unsure guests choose by body state before reading the full service menu.
 - A Services-page comparison menu that turns pathways into scannable, bookable decisions with best fit, starting length, price anchors, and next-step links.
+- A homepage booking-confidence section that tells unsure guests whether to book mapping, ask Rose first, or pause for provider guidance.
 - More explicit value around clear rates, pressure consent, and Rose-reviewed intake.
 - Services page now starts with a mapping-session snapshot.
 - Pricing page explains first-visit value and transparent membership positioning.
@@ -46,6 +47,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Booking section now explains what Rose confirms before accepting an appointment.
 - Dedicated specialty landing pages now support prenatal, lymphatic, headache/jaw, and sensitive-body search intent.
 - First Visit guide now gives new guests arrival, draping, pressure, positioning, aftercare, and confirmation expectations before booking.
+- The homepage decision row now keeps first-time guests focused on care mapping, first-visit expectations, and rates instead of making the 360 preview compete with practical booking decisions.
 
 ## Still Needed For Public Launch
 

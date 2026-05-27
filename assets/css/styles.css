@@ -364,9 +364,9 @@ h1 {
 
 .hero-decision {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.7rem;
-  max-width: 960px;
+  max-width: 780px;
   margin-top: 1rem;
 }
 
@@ -437,6 +437,10 @@ section {
   z-index: 1;
 }
 
+section[id] {
+  scroll-margin-top: 96px;
+}
+
 .band {
   background:
     linear-gradient(135deg, rgba(244, 239, 228, 0.92), rgba(237, 242, 223, 0.94)),
@@ -454,6 +458,7 @@ section {
 .experience,
 .experience-360,
 .care-compass,
+.booking-confidence,
 .booking,
 .return-ritual,
 .journal,
@@ -477,6 +482,7 @@ section {
 .experience-grid,
 .experience-360-shell,
 .compass-tool,
+.confidence-grid,
 .booking,
 .ritual-tool,
 .journal-grid,
@@ -2199,11 +2205,70 @@ section {
 }
 
 .experience-grid span,
+.confidence-grid span,
 .journal-grid span {
   color: var(--wood);
   font-size: 0.78rem;
   font-weight: 850;
   letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.booking-confidence {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 4.5rem);
+  background: linear-gradient(180deg, rgba(251, 248, 239, 0.98), rgba(237, 242, 223, 0.86));
+}
+
+.confidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.confidence-grid article {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 310px;
+  padding: clamp(1.1rem, 2.4vw, 1.6rem);
+  border: 1px solid rgba(49, 75, 54, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 18px 54px rgba(49, 75, 54, 0.08);
+}
+
+.confidence-grid article:nth-child(3) {
+  background: rgba(49, 75, 54, 0.92);
+}
+
+.confidence-grid article:nth-child(3) h3,
+.confidence-grid article:nth-child(3) p {
+  color: var(--linen);
+}
+
+.confidence-grid article:nth-child(3) a {
+  color: var(--gold);
+}
+
+.confidence-grid h3 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1.02;
+}
+
+.confidence-grid p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.confidence-grid a {
+  align-self: end;
+  margin-top: auto;
+  color: var(--wood);
+  font-size: 0.78rem;
+  font-weight: 850;
   text-transform: uppercase;
 }
 
@@ -3125,6 +3190,7 @@ details p {
   .fit-finder-grid,
   .care-style-grid,
   .experience-grid,
+  .confidence-grid,
   .pricing-focus-grid,
   .journal-grid,
   .journal-library-grid {
@@ -3263,6 +3329,7 @@ details p {
   .experience,
   .experience-360,
   .care-compass,
+  .booking-confidence,
   .booking,
   .return-ritual,
   .journal,
@@ -3321,6 +3388,7 @@ details p {
   .care-style-grid,
   .experience-grid,
   .experience-360-waypoints,
+  .confidence-grid,
   .compass-tool,
   .ritual-tool,
   .journal-grid,
@@ -3381,6 +3449,7 @@ details p {
   .service-card,
   .care-style-grid article,
   .experience-grid article,
+  .confidence-grid article,
   .journal-grid article {
     min-height: auto;
   }
@@ -3572,6 +3641,7 @@ details p {
   .care-style,
   .experience,
   .care-compass,
+  .booking-confidence,
   .booking,
   .return-ritual,
   .journal,
@@ -3605,6 +3675,7 @@ details p {
   .mapping-card,
   .booking-form,
   .booking-assurance,
+  .confidence-grid article,
   .session-map,
   .experience-360-copy-card,
   .ritual-controls,

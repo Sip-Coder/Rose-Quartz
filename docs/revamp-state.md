@@ -21,6 +21,8 @@ Updated: 2026-05-27
 - The hero now presents the 90-minute New Client Care Mapping path as the recommended first-visit offer with duration, rate, outcomes, and a request link.
 - The homepage request-confidence guide now covers mapping, ask-first notes, minimal private disclosure, and provider-clearance pauses before a guest drafts a request.
 - Custom conversion controls now have visible keyboard focus styling across hero links, care chips, map zones, session-length options, and trust links.
+- The First Visit guide now includes a confirmation-response flow covering accept, adjust, provider-guidance, and pause outcomes before a session is accepted.
+- The homepage request preview now works before name or contact details are added, with placeholders in the copyable draft for privacy-minded guests.
 
 ## Validation Recipe
 

@@ -574,8 +574,8 @@ if (bookingForm && summary) {
   bookingForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const formData = new FormData(bookingForm);
-    const name = formData.get("name");
-    const contact = formData.get("contact");
+    const name = String(formData.get("name") || "").trim();
+    const contact = String(formData.get("contact") || "").trim();
     const focus = formData.get("focus");
     const notes = formData.get("notes");
     const logistics = formData.get("logistics");
@@ -597,11 +597,11 @@ if (bookingForm && summary) {
     summary.append(
       title,
       document.createElement("br"),
-      document.createTextNode(`${name}, your ${duration} ${focus} request draft is ready. Session rate: ${price}.`),
+      document.createTextNode(`${name ? `${name}, your` : "Your"} ${duration} ${focus} request draft is ready. Session rate: ${price}.`),
       document.createElement("br"),
-      document.createTextNode("Review these details before sending them through Rose's confirmed contact method. Rose will confirm timing, comfort needs, and the best appointment path before care."),
+      document.createTextNode("Review these details before adding contact information or sending them through Rose's confirmed contact method. Rose will confirm timing, comfort needs, and the best appointment path before care."),
       document.createElement("br"),
-      document.createTextNode(`Contact: ${contact}.`),
+      document.createTextNode(contact ? `Contact: ${contact}.` : "Contact: add when you are ready to send the draft."),
     );
 
     if (bodyZones) {
@@ -642,8 +642,8 @@ if (bookingForm && summary) {
     if (bookingHandoff && bookingHandoffText && copyStatus) {
       const requestDraft = [
         "Rose Quartz care request preview",
-        `Name: ${name}`,
-        `Contact: ${contact}`,
+        name ? `Name: ${name}` : "Name: add when ready",
+        contact ? `Contact: ${contact}` : "Contact: add when ready",
         `Care focus: ${focus}`,
         `Session length: ${duration}`,
         `Session rate: ${price}`,

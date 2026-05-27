@@ -1338,6 +1338,7 @@ section[id] {
 .service-menu,
 .service-snapshot,
 .visit-prep,
+.confirmation-flow,
 .service-compare,
 .service-detail-list,
 .service-planning {
@@ -1679,6 +1680,89 @@ section[id] {
   display: grid;
   gap: 1rem;
   align-content: start;
+}
+
+.confirmation-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 0.46fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: clamp(1rem, 2.8vw, 1.7rem);
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(244, 239, 228, 0.9), rgba(237, 242, 223, 0.74)),
+    repeating-linear-gradient(115deg, rgba(49, 75, 54, 0.05) 0 1px, transparent 1px 15px);
+  box-shadow: 0 18px 64px rgba(49, 75, 54, 0.1);
+}
+
+.confirmation-flow-copy {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.confirmation-flow h2 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(2.05rem, 4vw, 3.35rem);
+  line-height: 1;
+}
+
+.confirmation-flow-copy p:not(.eyebrow),
+.confirmation-flow-grid p,
+.confirmation-note p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.62;
+}
+
+.confirmation-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.74rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.confirmation-flow-grid li {
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+  min-height: 178px;
+  padding: 0.95rem;
+  border: 1px solid rgba(49, 75, 54, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.confirmation-flow-grid span {
+  color: var(--wood);
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.confirmation-flow-grid strong,
+.confirmation-note strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 540;
+  line-height: 1.08;
+}
+
+.confirmation-note {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem;
+  border: 1px solid rgba(49, 75, 54, 0.16);
+  border-radius: var(--radius);
+  background: rgba(251, 248, 239, 0.7);
 }
 
 .service-planning {
@@ -3677,6 +3761,7 @@ details p {
   .pricing-focus,
   .pricing-rhythm,
   .visit-prep,
+  .confirmation-flow,
   .service-detail-card,
   .body-map-tool,
   .article-layout {
@@ -3891,6 +3976,7 @@ details p {
   .pricing-note-grid,
   .pricing-rhythm ol,
   .visit-prep-grid,
+  .confirmation-flow-grid,
   .booking-handoff-steps,
   .booking-trust-grid,
   .booking-options,
@@ -4179,6 +4265,7 @@ details p {
   .pricing-focus,
   .pricing-rhythm,
   .visit-prep,
+  .confirmation-flow,
   .pricing-panel,
   .pricing-card,
   .service-detail-card,

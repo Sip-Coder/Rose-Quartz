@@ -317,10 +317,10 @@ const generatedArticles = [
   },
   {
     slug: "session-length-guide",
-    category: "Booking Guidance",
+    category: "Request Guidance",
     title: "60, 90, or 120 minutes: choosing a session length that matches your body",
     deck: "The right length depends on focus, nervous-system pace, complexity, and whether the guest needs transition time as much as table time.",
-    tags: ["Booking", "Session length", "Planning"],
+    tags: ["Request prep", "Session length", "Planning"],
     image: imageFor.ritual,
     sources: ["nccihMassageTips"],
     callout: "Longer is not automatically better. Medical cautions, fatigue, pregnancy comfort, and nervous-system capacity should shape the appointment length.",
@@ -677,10 +677,10 @@ const generatedArticles = [
   },
   {
     slug: "body-map-booking-guide",
-    category: "Booking Guidance",
+    category: "Request Guidance",
     title: "How to use the Rose Session Map before you book",
     deck: "A body map helps guests share pain, tenderness, swelling, breath, and pressure preferences without writing a perfect essay.",
-    tags: ["Body map", "Booking", "Intake"],
+    tags: ["Body map", "Request prep", "Intake"],
     image: imageFor.body,
     sources: ["nccihMassageTips"],
     callout: "The body map is for communication, not diagnosis. New, severe, unexplained, or medically concerning symptoms should be discussed with a health professional.",
@@ -717,7 +717,7 @@ const generatedArticles = [
   },
   {
     slug: "how-often-to-rebook",
-    category: "Booking Guidance",
+    category: "Request Guidance",
     title: "How often should you rebook massage?",
     deck: "The right rhythm depends on the guest's goal, stress load, pregnancy stage, pain pattern, budget, and how long relief lasts.",
     tags: ["Rebooking", "Care rhythm", "Planning"],
@@ -857,10 +857,10 @@ const generatedArticles = [
   },
   {
     slug: "the-quiet-intake",
-    category: "Booking Guidance",
+    category: "Request Guidance",
     title: "The quiet intake: how Rose can learn a lot without making guests overexplain",
     deck: "A good intake respects privacy while still gathering the details that make massage safer and more personal.",
-    tags: ["Intake", "Privacy", "Booking"],
+    tags: ["Intake", "Privacy", "Request prep"],
     image: imageFor.ritual,
     sources: ["nccihMassageTips"],
     callout: "Clients should share information that affects safety and comfort, but they do not owe personal stories beyond what is needed for care.",
@@ -932,10 +932,10 @@ ${brandMark}
         <a href="${prefix}index.html#about">About</a>
         <a href="${prefix}index.html#method">Method</a>
         <a href="${prefix}index.html#care-style">Care Style</a>
-        <a href="${prefix}index.html#booking">Booking</a>
+        <a href="${prefix}index.html#booking">Preview</a>
         <a href="${prefix}journal.html">Journal</a>
       </nav>
-      <a class="header-cta" href="${prefix}index.html#booking">Book a session</a>
+      <a class="header-cta" href="${prefix}index.html#booking">Preview request</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
         <span>Menu</span>
       </button>
@@ -947,7 +947,7 @@ ${brandMark}
       <a href="${prefix}index.html#about">About</a>
       <a href="${prefix}index.html#method">Method</a>
       <a href="${prefix}index.html#care-style">Care Style</a>
-      <a href="${prefix}index.html#booking">Booking</a>
+      <a href="${prefix}index.html#booking">Preview</a>
       <a href="${prefix}journal.html">Journal</a>
     </nav>`;
 
@@ -969,7 +969,7 @@ ${brandMark}
         <a href="${prefix}index.html#about">About</a>
         <a href="${prefix}care-standards.html">Care Standards</a>
         <a href="${prefix}privacy-intake.html">Privacy</a>
-        <a href="${prefix}index.html#booking">Booking</a>
+        <a href="${prefix}index.html#booking">Preview</a>
         <a href="${prefix}journal.html">Journal</a>
       </div>
     </footer>`;
@@ -1066,7 +1066,7 @@ ${articleHeader("../")}
             <span class="article-tag">Rose note</span>
             <h2>Best session fit</h2>
             <p>${escapeHtml(article.asideFit)}</p>
-            <h3>Booking prompt</h3>
+            <h3>Request preview prompt</h3>
             <p>${escapeHtml(article.prompt)}</p>
             <a href="../index.html#booking">Create a session map</a>
           </aside>

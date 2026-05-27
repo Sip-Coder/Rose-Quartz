@@ -26,6 +26,7 @@ Updated: 2026-05-27
 - High-intent CTAs now use "Preview" language and the hero offer states the request is a preview before Rose confirms fit, timing, details, and policies.
 - The homepage request-confidence flow now includes a new-guest fit check: ready to preview, add context first, or pause today for provider guidance.
 - The Care Standards page now uses preview-era CTA language and a customer-facing fit, safety, and practical-details confirmation block instead of launch-prep TODO copy.
+- Journal article pages and Privacy/Intake now use preview-era language, and the launch-readiness check scans generated journal pages for stale live-booking labels.
 
 ## Validation Recipe
 

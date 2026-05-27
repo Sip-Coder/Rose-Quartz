@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -7,7 +7,7 @@ const strict = process.argv.includes("--strict-launch");
 const launchFactsPath = "docs/launch-facts.json";
 const launchFactsTemplatePath = "docs/launch-facts.template.json";
 
-const publicPages = [
+const rootPublicPages = [
   "index.html",
   "services.html",
   "pricing.html",
@@ -20,6 +20,8 @@ const publicPages = [
   "privacy-intake.html",
   "journal.html"
 ];
+
+const publicPages = collectPublicPages();
 
 const specialtyPages = [
   "prenatal-massage.html",
@@ -120,6 +122,18 @@ function assertFile(relPath) {
   if (!existsSync(join(rootDir, relPath))) {
     errors.push(`Missing required file: ${relPath}`);
   }
+}
+
+function collectPublicPages() {
+  const journalDir = join(rootDir, "journal");
+  const journalPages = existsSync(journalDir)
+    ? readdirSync(journalDir)
+        .filter((file) => file.endsWith(".html"))
+        .sort((a, b) => a.localeCompare(b))
+        .map((file) => `journal/${file}`)
+    : [];
+
+  return [...rootPublicPages, ...journalPages];
 }
 
 function read(relPath) {

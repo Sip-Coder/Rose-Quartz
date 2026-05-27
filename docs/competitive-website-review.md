@@ -57,6 +57,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - Keyboard focus styling now covers the hero offer, care chips, map zones, session-length options, and trust links so custom controls feel as reliable as the native form fields.
 - The First Visit guide now shows a confirmation-response flow: accept, adjust, ask for provider guidance, or pause care, plus the trust details Rose should repeat before the session.
 - The homepage request preview no longer requires name or contact details, so privacy-minded guests can review the care draft before deciding what to send.
+- High-intent CTAs now say "Preview" instead of implying live booking, and the hero offer explains the preview-copy-confirm-accept handoff before guests reach the form.
 - Dedicated specialty landing pages now support prenatal, lymphatic, headache/jaw, and sensitive-body search intent.
 - First Visit guide now gives new guests a five-minute prep checklist plus arrival, draping, pressure, positioning, aftercare, and confirmation expectations before booking.
 - The homepage decision row now keeps first-time guests focused on care mapping, first-visit expectations, and rates instead of making the 360 preview compete with practical booking decisions.
@@ -89,6 +90,8 @@ The next pass strengthens that same trust gap in the visible conversion flow: th
 The follow-up First Visit pass turns another competitor advantage into a safe Rose Quartz pattern. Competitors can reduce doubt with live scheduling, published locations, policies, and reviews. Until those real facts are approved, Rose now shows the decision workflow a guest should expect after requesting care: accepted as planned, adjusted before acceptance, clarified with provider guidance, or paused when massage is not the right step that day.
 
 The request form now matches that privacy promise more closely: guests can preview the care draft before adding name or contact details, while the copyable draft keeps placeholders for those fields when they are ready to send it through Rose's confirmed contact method.
+
+The latest request-language pass surfaces the prototype status earlier. Competitors can say "book now" because they publish working scheduling and full logistics; Rose now says "preview" at the highest-intent CTAs and explains that Rose confirms fit, timing, details, and policies before accepting the appointment.
 
 ## Source Set
 

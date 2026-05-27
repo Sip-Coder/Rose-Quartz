@@ -23,6 +23,7 @@ Updated: 2026-05-27
 - Custom conversion controls now have visible keyboard focus styling across hero links, care chips, map zones, session-length options, and trust links.
 - The First Visit guide now includes a confirmation-response flow covering accept, adjust, provider-guidance, and pause outcomes before a session is accepted.
 - The homepage request preview now works before name or contact details are added, with placeholders in the copyable draft for privacy-minded guests.
+- High-intent CTAs now use "Preview" language and the hero offer states the request is a preview before Rose confirms fit, timing, details, and policies.
 
 ## Validation Recipe
 

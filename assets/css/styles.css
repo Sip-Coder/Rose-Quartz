@@ -1799,6 +1799,71 @@ section[id] {
   margin-top: auto;
 }
 
+.pricing-rhythm {
+  display: grid;
+  grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 1rem;
+  padding: clamp(1rem, 2.8vw, 1.5rem);
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(49, 75, 54, 0.95), rgba(23, 33, 26, 0.95)),
+    repeating-linear-gradient(120deg, rgba(251, 248, 239, 0.06) 0 1px, transparent 1px 16px);
+}
+
+.pricing-rhythm h3 {
+  margin: 0;
+  color: var(--linen);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.pricing-rhythm p {
+  color: rgba(251, 248, 239, 0.78);
+  line-height: 1.62;
+}
+
+.pricing-rhythm ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.72rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-rhythm li {
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+  min-height: 170px;
+  padding: 0.92rem;
+  border: 1px solid rgba(251, 248, 239, 0.16);
+  border-radius: var(--radius);
+  background: rgba(251, 248, 239, 0.08);
+}
+
+.pricing-rhythm span {
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.pricing-rhythm strong {
+  color: var(--linen);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.24rem;
+  font-weight: 540;
+  line-height: 1.08;
+}
+
+.pricing-rhythm small {
+  color: rgba(251, 248, 239, 0.76);
+  font-size: 0.86rem;
+  line-height: 1.42;
+}
+
 .pricing-note-grid {
   margin-top: 1rem;
 }
@@ -3429,6 +3494,7 @@ details p {
   .experience-360-shell,
   .pricing-hero,
   .pricing-focus,
+  .pricing-rhythm,
   .service-detail-card,
   .body-map-tool,
   .article-layout {
@@ -3613,6 +3679,7 @@ details p {
   .journal-library-grid,
   .pricing-grid,
   .pricing-note-grid,
+  .pricing-rhythm ol,
   .booking-trust-grid,
   .booking-options,
   .body-map-tool,
@@ -3905,6 +3972,7 @@ details p {
   .ritual-card,
   .service-snapshot,
   .pricing-focus,
+  .pricing-rhythm,
   .pricing-panel,
   .pricing-card,
   .service-detail-card,

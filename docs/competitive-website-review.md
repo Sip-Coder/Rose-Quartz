@@ -44,6 +44,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - More explicit value around clear rates, pressure consent, and Rose-reviewed intake.
 - Services page now starts with a mapping-session snapshot.
 - Pricing page explains first-visit value and transparent membership positioning.
+- Pricing page now frames recurring care as a post-first-visit recommendation instead of publishing unapproved membership, package, gift-card, or deposit terms.
 - Mobile quick-action bar keeps request, rates, and service decisions reachable after the hero.
 - Service and pricing CTAs now carry focus and duration intent into the booking form.
 - Booking section now explains what Rose confirms before accepting an appointment.

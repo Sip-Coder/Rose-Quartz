@@ -2763,6 +2763,25 @@ section[id] {
 
 .booking {
   align-items: start;
+  grid-template-areas:
+    "copy form"
+    "map form";
+}
+
+.booking-copy {
+  grid-area: copy;
+}
+
+.booking-form {
+  grid-area: form;
+}
+
+#request-fields {
+  scroll-margin-top: 96px;
+}
+
+.booking .session-map {
+  grid-area: map;
 }
 
 .booking-options {
@@ -2897,7 +2916,6 @@ section[id] {
 }
 
 .session-map {
-  margin-top: 1rem;
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -3852,6 +3870,13 @@ details p {
   .body-map-tool,
   .article-layout {
     grid-template-columns: 1fr;
+  }
+
+  .booking {
+    grid-template-areas:
+      "copy"
+      "form"
+      "map";
   }
 
   .article-aside {

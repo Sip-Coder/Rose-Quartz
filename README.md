@@ -18,7 +18,7 @@ Then open the localhost URL printed by Vite.
 - Specialist service menu with room for expansion
 - Interactive Rose Session Map body-map intake
 - New-guest fit check for preview-ready, context-needed, and provider-guidance cases
-- Booking request interaction
+- Booking request interaction with trust-first preview steps and optional body-map details
 - Care standards page for consent, privacy, prenatal safety, lymphatic cautions, scope of practice, and what Rose confirms before care
 - Privacy and intake page for sensitive body-map details and future AI-assisted summaries
 - 36-article journal library with optimized article-specific header images, contextual preview-prefilled article CTAs, and a browsable all-articles page

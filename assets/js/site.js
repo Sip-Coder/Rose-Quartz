@@ -302,7 +302,7 @@ const syncSessionMap = () => {
   if (!sessionMapOutput) return;
 
   if (!sessionMap.zones.size) {
-    sessionMapOutput.textContent = "Choose one or more body areas to begin your session map.";
+    sessionMapOutput.textContent = "Optional: choose one or more body areas to add context to your request.";
     return;
   }
 

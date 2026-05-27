@@ -28,6 +28,7 @@ Updated: 2026-05-27
 - The Care Standards page now uses preview-era CTA language and a customer-facing fit, safety, and practical-details confirmation block instead of launch-prep TODO copy.
 - Journal article pages and Privacy/Intake now use preview-era language, and the launch-readiness check scans generated journal pages for stale live-booking labels.
 - Journal article CTAs now carry article context into the request preview with prefilled focus, duration, and notes so search-entry guests do not land in a blank form.
+- The homepage request section now puts the trust handoff and form before the body-map tool, with the Rose Session Map framed as optional context instead of a required first step on mobile.
 
 ## Validation Recipe
 

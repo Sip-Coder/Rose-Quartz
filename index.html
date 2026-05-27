@@ -776,65 +776,9 @@
             </ul>
           </div>
 
-          <div class="session-map" aria-labelledby="session-map-title">
-            <div class="session-map-heading">
-              <span class="pill">Body map intake</span>
-              <h3 id="session-map-title">Create your Rose Session Map</h3>
-              <p>Begin with the areas asking for care, then choose what you are feeling. Your choices become a care summary Rose can review before confirming the appointment.</p>
-            </div>
-            <div class="body-map-tool">
-              <div class="body-map-stage" role="group" aria-label="Body areas">
-                <div class="body-figure" aria-hidden="true">
-                  <span class="figure-head"></span>
-                  <span class="figure-torso"></span>
-                  <span class="figure-arm figure-arm-left"></span>
-                  <span class="figure-arm figure-arm-right"></span>
-                  <span class="figure-leg figure-leg-left"></span>
-                  <span class="figure-leg figure-leg-right"></span>
-                </div>
-                <button class="map-zone zone-head" type="button" data-zone="head, jaw, and scalp" aria-pressed="false">Head & jaw</button>
-                <button class="map-zone zone-neck" type="button" data-zone="neck and shoulders" aria-pressed="false">Neck & shoulders</button>
-                <button class="map-zone zone-heart" type="button" data-zone="chest, breath, and heart space" aria-pressed="false">Breath</button>
-                <button class="map-zone zone-prenatal" type="button" data-zone="belly and prenatal support" aria-pressed="false">Prenatal</button>
-                <button class="map-zone zone-back" type="button" data-zone="low back and sacrum" aria-pressed="false">Low back</button>
-                <button class="map-zone zone-hips" type="button" data-zone="hips and pelvis" aria-pressed="false">Hips</button>
-                <button class="map-zone zone-feet" type="button" data-zone="feet, ankles, and swelling" aria-pressed="false">Feet</button>
-                <button class="map-zone zone-system" type="button" data-zone="whole nervous system" aria-pressed="false">Whole system</button>
-              </div>
-              <div class="session-map-controls">
-                <div>
-                  <span class="control-label">Sensation</span>
-                  <div class="chip-row" role="group" aria-label="Sensation choices">
-                    <button type="button" data-sensation="tightness" aria-pressed="false">Tight</button>
-                    <button type="button" data-sensation="tenderness" aria-pressed="false">Tender</button>
-                    <button type="button" data-sensation="swelling or heaviness" aria-pressed="false">Swollen</button>
-                    <button type="button" data-sensation="stress or bracing" aria-pressed="false">Bracing</button>
-                    <button type="button" data-sensation="headache or jaw clenching" aria-pressed="false">Headache</button>
-                  </div>
-                </div>
-                <div>
-                  <span class="control-label">Pressure</span>
-                  <div class="chip-row" role="group" aria-label="Pressure preference">
-                    <button class="is-selected" type="button" data-pressure="light, nervous-system safe pressure" aria-pressed="true">Light</button>
-                    <button type="button" data-pressure="medium therapeutic pressure with frequent check-ins" aria-pressed="false">Medium</button>
-                    <button type="button" data-pressure="focused structural pressure only where requested" aria-pressed="false">Focused</button>
-                  </div>
-                </div>
-                <div>
-                  <span class="control-label">Session tone</span>
-                  <div class="chip-row" role="group" aria-label="Session tone">
-                    <button class="is-selected" type="button" data-tone="quiet grounding" aria-pressed="true">Quiet</button>
-                    <button type="button" data-tone="gentle conversation and coaching" aria-pressed="false">Guided</button>
-                    <button type="button" data-tone="water-inspired ritual and deep rest" aria-pressed="false">Ritual</button>
-                  </div>
-                </div>
-                <output class="session-map-output" data-session-map-output>Choose one or more body areas to begin your session map.</output>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <form class="booking-form" data-booking-form>
+        <form class="booking-form" id="request-fields" data-booking-form>
           <div class="booking-trust" aria-labelledby="booking-trust-title">
             <p class="eyebrow">Trust before details</p>
             <h3 id="booking-trust-title">Preview the request without oversharing.</h3>
@@ -918,6 +862,63 @@
             <p class="booking-copy-status" id="booking-copy-status" data-copy-status aria-live="polite">Use this with Rose's confirmed contact method.</p>
           </div>
         </form>
+
+        <div class="session-map" aria-labelledby="session-map-title">
+          <div class="session-map-heading">
+            <span class="pill">Optional body map</span>
+            <h3 id="session-map-title">Add body areas for a clearer plan.</h3>
+            <p>Use this if you want Rose to see the areas, sensations, pressure, and tone behind your request. Skip it if the short form already says enough.</p>
+          </div>
+          <div class="body-map-tool">
+            <div class="body-map-stage" role="group" aria-label="Body areas">
+              <div class="body-figure" aria-hidden="true">
+                <span class="figure-head"></span>
+                <span class="figure-torso"></span>
+                <span class="figure-arm figure-arm-left"></span>
+                <span class="figure-arm figure-arm-right"></span>
+                <span class="figure-leg figure-leg-left"></span>
+                <span class="figure-leg figure-leg-right"></span>
+              </div>
+              <button class="map-zone zone-head" type="button" data-zone="head, jaw, and scalp" aria-pressed="false">Head & jaw</button>
+              <button class="map-zone zone-neck" type="button" data-zone="neck and shoulders" aria-pressed="false">Neck & shoulders</button>
+              <button class="map-zone zone-heart" type="button" data-zone="chest, breath, and heart space" aria-pressed="false">Breath</button>
+              <button class="map-zone zone-prenatal" type="button" data-zone="belly and prenatal support" aria-pressed="false">Prenatal</button>
+              <button class="map-zone zone-back" type="button" data-zone="low back and sacrum" aria-pressed="false">Low back</button>
+              <button class="map-zone zone-hips" type="button" data-zone="hips and pelvis" aria-pressed="false">Hips</button>
+              <button class="map-zone zone-feet" type="button" data-zone="feet, ankles, and swelling" aria-pressed="false">Feet</button>
+              <button class="map-zone zone-system" type="button" data-zone="whole nervous system" aria-pressed="false">Whole system</button>
+            </div>
+            <div class="session-map-controls">
+              <div>
+                <span class="control-label">Sensation</span>
+                <div class="chip-row" role="group" aria-label="Sensation choices">
+                  <button type="button" data-sensation="tightness" aria-pressed="false">Tight</button>
+                  <button type="button" data-sensation="tenderness" aria-pressed="false">Tender</button>
+                  <button type="button" data-sensation="swelling or heaviness" aria-pressed="false">Swollen</button>
+                  <button type="button" data-sensation="stress or bracing" aria-pressed="false">Bracing</button>
+                  <button type="button" data-sensation="headache or jaw clenching" aria-pressed="false">Headache</button>
+                </div>
+              </div>
+              <div>
+                <span class="control-label">Pressure</span>
+                <div class="chip-row" role="group" aria-label="Pressure preference">
+                  <button class="is-selected" type="button" data-pressure="light, nervous-system safe pressure" aria-pressed="true">Light</button>
+                  <button type="button" data-pressure="medium therapeutic pressure with frequent check-ins" aria-pressed="false">Medium</button>
+                  <button type="button" data-pressure="focused structural pressure only where requested" aria-pressed="false">Focused</button>
+                </div>
+              </div>
+              <div>
+                <span class="control-label">Session tone</span>
+                <div class="chip-row" role="group" aria-label="Session tone">
+                  <button class="is-selected" type="button" data-tone="quiet grounding" aria-pressed="true">Quiet</button>
+                  <button type="button" data-tone="gentle conversation and coaching" aria-pressed="false">Guided</button>
+                  <button type="button" data-tone="water-inspired ritual and deep rest" aria-pressed="false">Ritual</button>
+                </div>
+              </div>
+              <output class="session-map-output" data-session-map-output>Optional: choose one or more body areas to add context to your request.</output>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="return-ritual" id="return-ritual" aria-labelledby="return-ritual-title">

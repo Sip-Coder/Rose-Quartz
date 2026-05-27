@@ -1262,6 +1262,7 @@ section[id] {
 .service-page-hero,
 .service-menu,
 .service-snapshot,
+.visit-prep,
 .service-compare,
 .service-detail-list,
 .service-planning {
@@ -1381,6 +1382,72 @@ section[id] {
 
 .service-snapshot dd {
   margin: 0.35rem 0 0;
+}
+
+.visit-prep {
+  display: grid;
+  grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
+  margin-bottom: 1rem;
+  padding: clamp(1rem, 2.8vw, 1.6rem);
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(49, 75, 54, 0.95), rgba(23, 33, 26, 0.95)),
+    repeating-linear-gradient(120deg, rgba(251, 248, 239, 0.06) 0 1px, transparent 1px 16px);
+}
+
+.visit-prep h2 {
+  margin: 0;
+  color: var(--linen);
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1;
+}
+
+.visit-prep p {
+  color: rgba(251, 248, 239, 0.78);
+  line-height: 1.62;
+}
+
+.visit-prep-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.72rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visit-prep-grid li {
+  display: grid;
+  gap: 0.42rem;
+  align-content: start;
+  min-height: 158px;
+  padding: 0.92rem;
+  border: 1px solid rgba(251, 248, 239, 0.16);
+  border-radius: var(--radius);
+  background: rgba(251, 248, 239, 0.08);
+}
+
+.visit-prep-grid span {
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.visit-prep-grid strong {
+  color: var(--linen);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.24rem;
+  font-weight: 540;
+  line-height: 1.08;
+}
+
+.visit-prep-grid small {
+  color: rgba(251, 248, 239, 0.76);
+  font-size: 0.86rem;
+  line-height: 1.42;
 }
 
 .service-compare {
@@ -2507,6 +2574,45 @@ section[id] {
   line-height: 1.6;
 }
 
+.booking-handoff-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.booking-handoff-steps li {
+  display: grid;
+  gap: 0.28rem;
+  align-content: start;
+  min-height: 120px;
+  padding: 0.72rem;
+  border: 1px solid rgba(49, 75, 54, 0.14);
+  border-radius: var(--radius);
+  background: rgba(49, 75, 54, 0.08);
+}
+
+.booking-handoff-steps span {
+  color: var(--wood);
+  font-size: 0.68rem;
+  font-weight: 850;
+}
+
+.booking-handoff-steps strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 540;
+}
+
+.booking-handoff-steps small {
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  line-height: 1.36;
+}
+
 .booking-trust-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3472,6 +3578,7 @@ details p {
   .experience-grid,
   .confidence-grid,
   .pricing-focus-grid,
+  .booking-handoff-steps,
   .booking-trust-grid,
   .journal-grid,
   .journal-library-grid {
@@ -3495,6 +3602,7 @@ details p {
   .pricing-hero,
   .pricing-focus,
   .pricing-rhythm,
+  .visit-prep,
   .service-detail-card,
   .body-map-tool,
   .article-layout {
@@ -3680,6 +3788,8 @@ details p {
   .pricing-grid,
   .pricing-note-grid,
   .pricing-rhythm ol,
+  .visit-prep-grid,
+  .booking-handoff-steps,
   .booking-trust-grid,
   .booking-options,
   .body-map-tool,
@@ -3973,6 +4083,7 @@ details p {
   .service-snapshot,
   .pricing-focus,
   .pricing-rhythm,
+  .visit-prep,
   .pricing-panel,
   .pricing-card,
   .service-detail-card,

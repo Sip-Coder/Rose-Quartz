@@ -13,8 +13,9 @@ Updated: 2026-05-27
 - Homepage now gives new guests fast paths into Care Mapping, first-visit guidance, rates, and a sample Session Map.
 - The 360 room preview uses a generated 2:1 panorama, lazy-loaded Three.js viewer, waypoints, fallback image, and responsive controls.
 - Care Mapping is framed as a tangible first-visit output: the Rose Session Map summarizes body areas, pressure boundaries, session pathway, and aftercare.
-- The request flow now explains trust and intake boundaries before details are entered, then creates a copyable draft instead of pretending a live booking integration exists.
+- The request flow now explains trust, intake boundaries, and the preview/copy/contact/confirmation handoff before details are entered, then creates a copyable draft instead of pretending a live booking integration exists.
 - Pricing, services, first-visit, and specialty pages now carry clearer conversion paths for unsure guests, including a post-first-visit care-rhythm explanation that avoids unsupported membership terms.
+- The First Visit guide now includes a five-minute prep checklist so guests can name goals, boundaries, cautions, and privacy limits before drafting a request.
 
 ## Validation Recipe
 

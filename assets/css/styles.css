@@ -364,9 +364,9 @@ h1 {
 
 .hero-decision {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.7rem;
-  max-width: 780px;
+  max-width: 1020px;
   margin-top: 1rem;
 }
 
@@ -735,11 +735,118 @@ section[id] {
 }
 
 .mapping-flow p,
+.session-map-card dd,
+.sample-map-proof p,
 .service-snapshot p,
 .service-snapshot dd,
 .pricing-focus-grid p {
   color: var(--ink-soft);
   line-height: 1.62;
+}
+
+.sample-map {
+  padding: clamp(4.5rem, 9vw, 8rem) clamp(1rem, 5vw, 4.5rem);
+  background:
+    linear-gradient(180deg, rgba(251, 248, 239, 0.96), rgba(244, 239, 228, 0.86)),
+    radial-gradient(circle at 88% 14%, rgba(139, 184, 173, 0.18), transparent 24rem);
+}
+
+.sample-map-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.52fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  width: min(100%, var(--content-max));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.session-map-card,
+.sample-map-proof {
+  border: 1px solid rgba(49, 75, 54, 0.16);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 60px rgba(49, 75, 54, 0.1);
+}
+
+.session-map-card {
+  padding: clamp(1rem, 3vw, 1.8rem);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.session-map-card-head {
+  display: flex;
+  gap: 0.8rem;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(49, 75, 54, 0.13);
+}
+
+.session-map-card-head span {
+  color: var(--wood);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.session-map-card-head strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.9rem);
+  font-weight: 540;
+  line-height: 1.08;
+  text-align: right;
+}
+
+.session-map-card dl {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.session-map-card dl div {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.28fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(49, 75, 54, 0.11);
+}
+
+.session-map-card dl div:last-child {
+  border-bottom: 0;
+}
+
+.session-map-card dt {
+  color: var(--wood);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.session-map-card dd {
+  margin: 0;
+}
+
+.sample-map-proof {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 1.8rem);
+  background:
+    linear-gradient(150deg, rgba(49, 75, 54, 0.94), rgba(23, 33, 26, 0.94)),
+    radial-gradient(circle at 88% 12%, rgba(210, 168, 92, 0.18), transparent 18rem);
+}
+
+.sample-map-proof h3 {
+  margin: 0;
+  color: var(--linen);
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1;
+}
+
+.sample-map-proof p {
+  margin: 0;
+  color: rgba(251, 248, 239, 0.78);
 }
 
 .bio-card {
@@ -3238,6 +3345,7 @@ details p {
   .intro-grid,
   .edge .section-heading,
   .mapping-card,
+  .sample-map-shell,
   .bio-card,
   .method,
   .compass-tool,
@@ -3359,6 +3467,7 @@ details p {
   .intro,
   .edge,
   .new-client-offer,
+  .sample-map,
   .bio,
   .services,
   .fit-finder,
@@ -3713,6 +3822,8 @@ details p {
   .mapping-card,
   .booking-form,
   .booking-assurance,
+  .session-map-card,
+  .sample-map-proof,
   .confidence-grid article,
   .session-map,
   .booking-handoff,
@@ -3730,7 +3841,8 @@ details p {
   }
 
   .service-menu,
-  .service-planning {
+  .service-planning,
+  .session-map-card dl div {
     grid-template-columns: 1fr;
   }
 

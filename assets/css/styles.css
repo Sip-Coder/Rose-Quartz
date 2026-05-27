@@ -2622,6 +2622,7 @@ section[id] {
 }
 
 .experience-grid span,
+.fit-check-list span,
 .confidence-grid span,
 .journal-grid span {
   color: var(--wood);
@@ -2634,6 +2635,77 @@ section[id] {
 .booking-confidence {
   padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 4.5rem);
   background: linear-gradient(180deg, rgba(251, 248, 239, 0.98), rgba(237, 242, 223, 0.86));
+}
+
+.fit-check-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.52fr) minmax(0, 1fr);
+  gap: 1px;
+  width: min(100%, var(--content-max));
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(49, 75, 54, 0.18);
+  border-radius: var(--radius);
+  background: rgba(49, 75, 54, 0.18);
+  box-shadow: 0 20px 62px rgba(49, 75, 54, 0.09);
+}
+
+.fit-check-copy,
+.fit-check-list article {
+  padding: clamp(1.1rem, 2.5vw, 1.55rem);
+}
+
+.fit-check-copy {
+  display: grid;
+  align-content: center;
+  gap: 0.9rem;
+  color: var(--linen);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(210, 168, 92, 0.24), transparent 18rem),
+    linear-gradient(145deg, rgba(49, 75, 54, 0.96), rgba(23, 33, 26, 0.94));
+}
+
+.fit-check-copy h3 {
+  margin: 0;
+  color: var(--linen);
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height: 1;
+}
+
+.fit-check-copy p {
+  margin: 0;
+  color: rgba(251, 248, 239, 0.78);
+  line-height: 1.62;
+}
+
+.fit-check-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.fit-check-list article {
+  display: grid;
+  align-content: start;
+  gap: 0.72rem;
+  min-height: 238px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.64), rgba(244, 239, 228, 0.68)),
+    radial-gradient(circle at 82% 12%, rgba(139, 184, 173, 0.16), transparent 16rem);
+}
+
+.fit-check-list strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.22rem, 2vw, 1.48rem);
+  font-weight: 540;
+  line-height: 1.13;
+}
+
+.fit-check-list p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.55;
 }
 
 .confidence-grid {
@@ -3760,6 +3832,7 @@ details p {
   .edge .section-heading,
   .mapping-card,
   .sample-map-shell,
+  .fit-check-panel,
   .bio-card,
   .method,
   .compass-tool,
@@ -3879,6 +3952,7 @@ details p {
 
   .hero-decision,
   .mapping-flow,
+  .fit-check-list,
   .pricing-focus-grid {
     grid-template-columns: 1fr;
   }

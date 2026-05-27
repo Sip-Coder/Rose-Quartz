@@ -17,8 +17,9 @@ Then open the localhost URL printed by Vite.
 - Optimized generated hero, prenatal, brand mood, and journal imagery
 - Specialist service menu with room for expansion
 - Interactive Rose Session Map body-map intake
+- New-guest fit check for preview-ready, context-needed, and provider-guidance cases
 - Booking request interaction
-- Care standards page for consent, privacy, prenatal safety, lymphatic cautions, and scope of practice
+- Care standards page for consent, privacy, prenatal safety, lymphatic cautions, scope of practice, and what Rose confirms before care
 - Privacy and intake page for sensitive body-map details and future AI-assisted summaries
 - 36-article journal library with optimized article-specific header images and a browsable all-articles page
 - AI experience roadmap in `docs/ai-experience-roadmap.md`

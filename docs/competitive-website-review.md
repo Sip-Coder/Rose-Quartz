@@ -58,6 +58,8 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - The First Visit guide now shows a confirmation-response flow: accept, adjust, ask for provider guidance, or pause care, plus the trust details Rose should repeat before the session.
 - The homepage request preview no longer requires name or contact details, so privacy-minded guests can review the care draft before deciding what to send.
 - High-intent CTAs now say "Preview" instead of implying live booking, and the hero offer explains the preview-copy-confirm-accept handoff before guests reach the form.
+- The homepage request-confidence flow now includes a new-guest fit check that separates ready-to-preview guests, guests who should add practical context, and guests who should pause for provider guidance.
+- The Care Standards page now reads as a customer-facing trust page instead of surfacing launch TODO language, with preview-era CTAs and a clear fit, safety, and practical-details confirmation block.
 - Dedicated specialty landing pages now support prenatal, lymphatic, headache/jaw, and sensitive-body search intent.
 - First Visit guide now gives new guests a five-minute prep checklist plus arrival, draping, pressure, positioning, aftercare, and confirmation expectations before booking.
 - The homepage decision row now keeps first-time guests focused on care mapping, first-visit expectations, and rates instead of making the 360 preview compete with practical booking decisions.
@@ -92,6 +94,8 @@ The follow-up First Visit pass turns another competitor advantage into a safe Ro
 The request form now matches that privacy promise more closely: guests can preview the care draft before adding name or contact details, while the copyable draft keeps placeholders for those fields when they are ready to send it through Rose's confirmed contact method.
 
 The latest request-language pass surfaces the prototype status earlier. Competitors can say "book now" because they publish working scheduling and full logistics; Rose now says "preview" at the highest-intent CTAs and explains that Rose confirms fit, timing, details, and policies before accepting the appointment.
+
+The latest fit-check and care-standards pass addresses another practical competitor advantage without inventing missing facts. Local menus can lean on published contact details, direct booking, reviews, policies, and front-desk availability. Rose now makes the safe-fit decision itself more visible: ready to preview, add context first, or pause today for provider guidance. The Care Standards page also now explains what Rose confirms before care begins instead of exposing internal launch-prep language.
 
 ## Source Set
 

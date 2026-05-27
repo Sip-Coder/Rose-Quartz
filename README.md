@@ -21,7 +21,7 @@ Then open the localhost URL printed by Vite.
 - Booking request interaction
 - Care standards page for consent, privacy, prenatal safety, lymphatic cautions, scope of practice, and what Rose confirms before care
 - Privacy and intake page for sensitive body-map details and future AI-assisted summaries
-- 36-article journal library with optimized article-specific header images, preview-first article CTAs, and a browsable all-articles page
+- 36-article journal library with optimized article-specific header images, contextual preview-prefilled article CTAs, and a browsable all-articles page
 - AI experience roadmap in `docs/ai-experience-roadmap.md`
 - Competitive research notes in `docs/research.md`
 - Launch SEO/domain checklist in `docs/launch-seo.md`

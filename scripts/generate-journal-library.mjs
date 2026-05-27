@@ -912,6 +912,33 @@ const escapeHtml = (value) =>
 
 const sourceLinks = (ids) => ids.map((id) => sources[id]).filter(Boolean);
 
+const requestFocusFor = (article) => {
+  const service = String(article.service || "").toLowerCase();
+  if (service.includes("prenatal")) return "Prenatal comfort";
+  if (service.includes("head") || service.includes("migraine")) return "Head, jaw, and headache care";
+  if (service.includes("lymphatic")) return "Lymphatic flow";
+  if (service.includes("nervous")) return "Nervous-system reset";
+  if (service.includes("restorative") || service.includes("ritual")) return "Restorative therapeutic massage";
+  return "Not sure yet";
+};
+
+const requestDurationFor = (article) => {
+  const service = String(article.service || "").toLowerCase();
+  const slug = String(article.slug || "").toLowerCase();
+  if (service.includes("ritual") || slug.includes("ritual") || slug.includes("water-breath") || slug.includes("scorpio")) return "120 minutes";
+  if (service.includes("head") || service.includes("lymphatic") || service.includes("special populations")) return "60 minutes";
+  return "90 minutes";
+};
+
+const requestHrefFor = (article, prefix = "../") => {
+  const params = new URLSearchParams({
+    focus: requestFocusFor(article),
+    duration: requestDurationFor(article),
+    note: `From the journal: ${article.title}. ${article.prompt || "I would like Rose to help map the right care path."}`
+  });
+  return escapeHtml(`${prefix}index.html?${params.toString()}#booking`);
+};
+
 const brandMark = `
           <span class="brand-mark" aria-hidden="true">
             <img src="/rose-quartz-logo.png" alt="Rose Quartz Massage" width="45" height="45" style="border-radius:50%;object-fit:cover;">
@@ -1068,7 +1095,7 @@ ${articleHeader("../")}
             <p>${escapeHtml(article.asideFit)}</p>
             <h3>Request preview prompt</h3>
             <p>${escapeHtml(article.prompt)}</p>
-            <a href="../index.html#booking">Create a session map</a>
+            <a href="${requestHrefFor(article)}">Build my session plan</a>
           </aside>
         </div>
 

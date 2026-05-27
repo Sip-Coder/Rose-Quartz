@@ -5,7 +5,7 @@ Updated: 2026-05-27
 ## Local Checkpoints
 
 - `revamp-baseline-360` points to `d04b544`, the saved local checkpoint after the 360 room-view pass.
-- Before this continuation, `main` and `origin/main` were aligned at `3ff1a22` with the Sample Rose Session Map already pushed.
+- Before this continuation, `main` and `origin/main` were aligned at `6c8e694` with the preview-language pass already pushed.
 - The current revamp direction is documented in `docs/competitive-website-review.md` and `docs/experience-360-build-notes.md`.
 
 ## Current Experience Wins
@@ -27,6 +27,7 @@ Updated: 2026-05-27
 - The homepage request-confidence flow now includes a new-guest fit check: ready to preview, add context first, or pause today for provider guidance.
 - The Care Standards page now uses preview-era CTA language and a customer-facing fit, safety, and practical-details confirmation block instead of launch-prep TODO copy.
 - Journal article pages and Privacy/Intake now use preview-era language, and the launch-readiness check scans generated journal pages for stale live-booking labels.
+- Journal article CTAs now carry article context into the request preview with prefilled focus, duration, and notes so search-entry guests do not land in a blank form.
 
 ## Validation Recipe
 

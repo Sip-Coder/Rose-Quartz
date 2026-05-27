@@ -17,6 +17,7 @@ Updated: 2026-05-27
 - Pricing, services, first-visit, and specialty pages now carry clearer conversion paths for unsure guests, including a post-first-visit care-rhythm explanation that avoids unsupported membership terms.
 - The First Visit guide now includes a five-minute prep checklist so guests can name goals, boundaries, cautions, and privacy limits before drafting a request.
 - Homepage guest questions now answer whether the request form confirms an appointment, how to keep sensitive details minimal, and how unsure guests can start with Care Mapping.
+- Homepage FAQ answers now have matching FAQPage structured data for search visibility without adding unsupported launch facts.
 
 ## Validation Recipe
 

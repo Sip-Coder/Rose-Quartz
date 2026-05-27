@@ -51,6 +51,7 @@ Rose Quartz should not compete as the cheapest local massage option or imitate a
 - The request preview now creates a copyable care-request draft, which gives guests a practical handoff until a live booking destination is available.
 - Homepage request flow now includes a trust-before-details module that explains the preview, copy, confirm, and accept handoff while pointing new guests to First Visit, Care Standards, and Privacy/Intake before they draft sensitive notes.
 - Homepage guest questions now clarify that the request form is a preview, how to keep sensitive notes minimal, and where unsure guests should start.
+- Homepage FAQ answers now have matching FAQPage structured data so the new-customer guidance is legible to search engines as well as visitors.
 - Dedicated specialty landing pages now support prenatal, lymphatic, headache/jaw, and sensitive-body search intent.
 - First Visit guide now gives new guests a five-minute prep checklist plus arrival, draping, pressure, positioning, aftercare, and confirmation expectations before booking.
 - The homepage decision row now keeps first-time guests focused on care mapping, first-visit expectations, and rates instead of making the 360 preview compete with practical booking decisions.
@@ -75,6 +76,8 @@ After the 360 room-view pass, the next competitive gap was not more atmosphere. 
 This keeps Rose Quartz premium and human while reducing the new-customer decision load that stronger competitors handle with larger menus, booking widgets, memberships, or front-desk guidance.
 
 The latest continuation links that tangible sample output into pricing and first-visit guidance, then improves the generated request draft handoff so keyboard and screen-reader users land on the copyable draft after previewing their details.
+
+The latest source refresh confirmed IMR still presents direct appointment links, gift-card links, service prices, add-ons, membership messaging, and review proof on its public pricing page. Rose Quartz should not invent those missing assets, so the homepage FAQ now answers the request-preview, sensitive-detail, and service-fit questions that are safe to clarify before live booking facts exist.
 
 ## Source Set
 

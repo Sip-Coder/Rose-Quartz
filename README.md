@@ -11,6 +11,9 @@ npm run dev
 
 Then open the localhost URL printed by Vite.
 
+On Windows, you can also double-click `Start-Local-Site.cmd` from this repo.
+It starts the Vite server and opens `http://127.0.0.1:5000/`.
+
 ## Current build includes
 
 - Full responsive landing page
